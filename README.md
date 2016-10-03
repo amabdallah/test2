@@ -60,5 +60,5 @@ Debug errors or implements updates and feedback
 Debug errors or implements updates and feedback
 
 ## Milestone#10
-Finalize the Wizard 
+Finalize and deliver the Wizard 
 
