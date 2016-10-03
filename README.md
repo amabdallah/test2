@@ -31,6 +31,34 @@ Its very important to write and organize the script files so I can understand th
  
 5. Are you ready to work and turn in Milestone#1 below?    
 
-## Milstone#1     
+# Tentative Milestones     
+## Milestone#1      
 A functional GUI in Python that connects with SQLite. A Model-View-Controller design architecture. Separate the wxFormBuilder forms from the rest of the code. Functional GUI means that I want an interactive front-end. Every Ribbon tab click should pop up its corresponding wizard or dialog box as designed in wxFormBuilder and explained in the specification.
+
+## Milestone#2   
+Implement software business rules to verify reading input data from spreadsheets. View spreadsheet input data within the Wizard. 
+
+## Milestone#3  
+Load spreadsheet input into the tables that are independent (like the CVs tables) or have one dependency on other tables. Perform software business rules and constraints.
+
+## Milestone#4   
+Implement the logic to import networks  
+
+## Milestone#5   
+Implement the logic to import data values 
+
+## Milestone#6   
+Revise software bunisness rules and verify the loaded data with SQL queires 
+
+## Milestone#7
+Debug errors or implements updates and feedback
+
+## Milestone#8
+Debug errors or implements updates and feedback
+
+## Milestone#9
+Debug errors or implements updates and feedback
+
+## Milestone#10
+Finalize the Wizard 
 
