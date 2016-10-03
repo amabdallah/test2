@@ -10,7 +10,8 @@ http://amabdallah.github.io/test2/diagrams/index.html
 https://github.com/amabdallah/test2/blob/master/WaM-DaM_for_SQLite.sql
 
 4. Front-end wxFormBuilder designs 
-https://github.com/amabdallah/test2/blob/master/WaMDaM_Wizard_Sept20.fbp
+https://github.com/amabdallah/test2/blob/master/WaMDaM_Wizard_Sept20.rar
+You need wxFormBuilder @ https://sourceforge.net/projects/wxformbuilder/
 
 5. spreadsheets templates 
 https://github.com/amabdallah/test2/tree/master/workbook%20Templates
