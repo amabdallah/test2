@@ -63,3 +63,11 @@ Debug errors or implements updates and feedback
 ## Milestone#10
 Finalize and deliver the Wizard 
 
+
+# Similar tools to learn from and expected example outcome 
+1. ODMToolsPython    
+https://github.com/ODM2/ODMToolsPython   
+
+2. ODM2StreamingDataLoader   
+https://github.com/ODM2/ODM2StreamingDataLoader   
+
