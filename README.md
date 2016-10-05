@@ -19,22 +19,7 @@ https://github.com/amabdallah/test2/tree/master/workbook%20Templates
 
 Its very important to write and organize the script files so I can understand them and others too. This product will be open source. 
 
-
-##Let me know:   
-
-1. Are you comfortable in doing such work?    
-
-2. What is the most challenging thing do you see?     
-
-3. How much time you expect it will take? (be realistic) 
-
-4. Will be dedicated to complete it as soon as you can?      
-
-4. How much money do you want in return?       
- 
-5. Are you ready to work and turn in Milestone#1 below as soon as possible? 
-
-6. Do you have suggestions as far as the milestones?anything else?        
+    
 
 # Tentative Milestones     
 ## Milestone#1      
