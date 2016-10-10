@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMSep19_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct8_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -17,7 +17,7 @@
 </table>
 <hr>
 <table class="pageTitle">
-<tr>
+<tr class="altRow">
 <td class="title_nm">Methods</td><td class="watermark_right">A Method refers to how a quantitative or qualitative data values of an...</td>
 </tr>
 </table>
@@ -45,24 +45,30 @@
 <td> </td><td><a href="../columns/Metadata_Methods_MethodCode.html">MethodCode</a></td><td>VarChar(50)</td><td> </td><td> </td><td> </td><td>A unique abbreviation of the method to reuse it to describe data values</td><td> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Methods_Webpage.html">Webpage</a></td><td>VarChar(255)</td><td>
+<td> </td><td><a href="../columns/Metadata_Methods_MethodWebpage.html">MethodWebpage</a></td><td>VarChar(255)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>A URL to a full description of the method	</td><td> </td>
 </tr>
 <tr>
+<td> </td><td><a href="../columns/Metadata_Methods_MethodCitation.html">MethodCitation</a></td><td>VarChar(500)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>a text of the proper citation of the method</td><td> </td>
+</tr>
+<tr class="altRow">
 <td> </td><td><a href="../columns/Metadata_Methods_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>Full text description of the method	</td><td> </td>
 </tr>
-<tr class="altRow">
+<tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term that provides the method type  like sample, simulation, optimization, or field procedure. The method type corresponds to &ldquo;value type&rdquo; attribute in the Observations Data Model </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
-<tr>
+<tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a person</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
@@ -99,7 +105,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_Mapping_fk_Mapping_Methods.html">fk_Mapping_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Core_Mapping.html">Core.Mapping</a></td><td>MethodID</td><td>MethodID</td>
+<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_Methods.html">fk_Mapping_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>MethodID</td><td>MethodID</td>
 </tr>
 </table>
 <br>

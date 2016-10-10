@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMSep19_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct8_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -45,13 +45,13 @@
 <td> </td><td><a href="../columns/Metadata_Sources_SourceCode.html">SourceCode</a></td><td>VarChar(50)</td><td> </td><td> </td><td> </td><td>a unique abbreviation of the source to reuse it to describe data values</td><td> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Sources_Webpage.html">Webpage</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/Metadata_Sources_SourceWebpage.html">SourceWebpage</a></td><td>VarChar(500)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>A URL for the organization's website</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_Sources_Citation.html">Citation</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/Metadata_Sources_SourceCitation.html">SourceCitation</a></td><td>VarChar(500)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>a text of the proper citation of the source</td><td> </td>
@@ -63,10 +63,7 @@
 </td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Sources_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Person</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Sources_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Person</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -99,7 +96,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Core_Mapping_fk_Mapping_Sources.html">fk_Mapping_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Core_Mapping.html">Core.Mapping</a></td><td>SourceID</td><td>SourceID</td>
+<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_Sources.html">fk_Mapping_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>SourceID</td><td>SourceID</td>
 </tr>
 </table>
 <br>
