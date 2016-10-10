@@ -14,7 +14,7 @@ https://github.com/amabdallah/test2/blob/master/WaMDaM_Wizard_Sept20.rar
 You need wxFormBuilder @ https://sourceforge.net/projects/wxformbuilder/
 
 5. spreadsheets templates 
-https://github.com/amabdallah/test2/tree/master/workbook%20Templates
+https://github.com/amabdallah/test2/tree/master/WorkbookTemplates
 
 
 Its very important to write and organize the script files so I can understand them and others too. This product will be open source. 
