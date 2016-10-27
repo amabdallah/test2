@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -51,16 +51,16 @@
 </td><td> </td><td> </td><td>it documents the start date or time that corresponds with the season (e.g., holiday)</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_SeasonalParameters_SeasonNameCV.html">SeasonNameCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for season name like winter, summer, day, night, holiday</td><td class="FkCol">
+<td> </td><td><a href="../columns/DataValues_SeasonalParameters_SeasonValue.html">SeasonValue</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td>a text for the season like 100 or "alfalfa" crop that corresponds to the Summer season</td><td> </td>
+</tr>
+<tr>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_SeasonalParameters_DataValuesMapperID.html">DataValuesMapperID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
-<tr>
-<td> </td><td><a href="../columns/DataValues_SeasonalParameters_SeasonValue.html">SeasonValue</a></td><td>VarChar(500)</td><td> </td><td> </td><td> </td><td>a text for the season like 100 or "alfalfa" crop that corresponds to the Summer season</td><td> </td>
-</tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_SeasonalParameters_DataValuesMapperID.html">DataValuesMapperID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_SeasonalParameters_SeasonNameID.html">SeasonNameID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -84,7 +84,7 @@
 <td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_DataStorage.html">fk_SeasonalParameters_DataStorage</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>Term</td><td>SeasonNameCV</td>
+<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>SeasonNameID</td><td>SeasonNameID</td>
 </tr>
 </table>
 <br>

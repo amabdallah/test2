@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -32,8 +32,17 @@
 <tr>
 <td class="PkCol">
 <p class="boolImg">
-<img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/CVs_MethodType_Term.html">Term</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
+<img src="../images/pkIcons/pkb1_16.gif"></p>
+</td><td class="PkCol"><a href="../columns/CVs_MethodType_MethodTypeID.html">MethodTypeID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="PkCol"> </td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
+</tr>
+<tr>
+<td class="PkCol">
+<p class="boolImg">
+<img src="../images/pkIcons/pkb2_16.gif"></p>
+</td><td class="PkCol"><a href="../columns/CVs_MethodType_MethodType.html">MethodType</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_MethodType_Definition.html">Definition</a></td><td>Text</td><td>
@@ -63,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodType.html">fk_Methods_MethodType</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Term</td><td>MethodTypeCV</td>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodType.html">fk_Methods_MethodType</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodTypeID</td><td>MethodTypeID</td>
 </tr>
 </table>
 <br>

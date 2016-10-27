@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -32,8 +32,17 @@
 <tr>
 <td class="PkCol">
 <p class="boolImg">
-<img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/CVs_FileFormat_Term.html">Term</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
+<img src="../images/pkIcons/pkb1_16.gif"></p>
+</td><td class="PkCol"><a href="../columns/CVs_FileFormat_FileFormatID.html">FileFormatID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="PkCol"> </td><td class="PkCol">Primary Key identifier</td><td class="PkCol"> </td>
+</tr>
+<tr>
+<td class="PkCol">
+<p class="boolImg">
+<img src="../images/pkIcons/pkb2_16.gif"></p>
+</td><td class="PkCol"><a href="../columns/CVs_FileFormat_FileFormat.html">FileFormat</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_FileFormat_Definition.html">Definition</a></td><td>Text</td><td>
@@ -63,7 +72,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>Term</td><td>FileFormate</td>
+<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatID</td><td>FileFormatID</td>
 </tr>
 </table>
 <br>

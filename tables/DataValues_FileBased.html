@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -42,22 +42,22 @@
 <td> </td><td><a href="../columns/DataValues_FileBased_FileName.html">FileName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a text for the name of the file on desk</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_FileBased_FileFormate.html">FileFormate</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for File format like csv, shp, dss, ndf, NetCDF, ini, gsm, db, .xy, .mdb, XML, PDF, .rdf, HDB</td><td class="FkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td>
-</tr>
-<tr class="altRow">
 <td> </td><td><a href="../columns/DataValues_FileBased_FileLocationOnDesk.html">FileLocationOnDesk</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a path link tot he the file on desk (e.g., C:\Users\WaM-DaM.jpg</td><td> </td>
 </tr>
-<tr>
+<tr class="altRow">
 <td> </td><td><a href="../columns/DataValues_FileBased_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td> </td><td> </td>
 </tr>
-<tr class="altRow">
+<tr>
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_FileBased_DataValuesMapperID.html">DataValuesMapperID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr class="altRow">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_FileBased_FileFormatID.html">FileFormatID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifier</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -81,7 +81,7 @@
 <td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_DataStorage.html">fk_FileBased_DataStorage</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>Term</td><td>FileFormate</td>
+<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatID</td><td>FileFormatID</td>
 </tr>
 </table>
 <br>

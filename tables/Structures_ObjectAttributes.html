@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -63,16 +63,16 @@
 </td><td> </td><td> </td><td>distinguishs input and output attributes in models</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Structures_ObjectAttributes_AttributeTypeCodeCV.html">AttributeTypeCodeCV</a></td><td class="FkCol">VarChar(50)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term for an Attribute Type Code like T (time series), P (parameter), MC (MultiColumn Array) </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Structures_ObjectAttributes_AttributeCategoryID.html">AttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for an AttributeCategory</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Structures_ObjectAttributes_AttributeCategoryID.html">AttributeCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for an AttributeCategory</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Structures_ObjectAttributes_AttributeTypeCodeID.html">AttributeTypeCodeID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -96,7 +96,7 @@
 <td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_Attributes.html">fk_ObjectAttributes_Attributes</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeID</td><td>AttributeID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_AttributeTypeCode.html">fk_ObjectAttributes_AttributeTypeCode</a></td><td><a href="../tables/CVs_AttributeTypeCode.html">CVs.AttributeTypeCode</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>Term</td><td>AttributeTypeCodeCV</td>
+<td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_AttributeTypeCode.html">fk_ObjectAttributes_AttributeTypeCode</a></td><td><a href="../tables/CVs_AttributeTypeCode.html">CVs.AttributeTypeCode</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeTypeCodeID</td><td>AttributeTypeCodeID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_NativeAttributeCategory.html">fk_ObjectAttributes_NativeAttributeCategory</a></td><td><a href="../tables/Metadata_AttributeCategory.html">Metadata.AttributeCategory</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeCategoryID</td><td>AttributeCategoryID</td>

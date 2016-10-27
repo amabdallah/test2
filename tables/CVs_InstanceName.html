@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -33,7 +33,13 @@
 <td class="PkCol">
 <p class="boolImg">
 <img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/CVs_InstanceName_Term.html">Term</a></td><td class="PkCol">VarChar(255)</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol">Controlled vocabulary term</td><td class="PkCol"> </td>
+</td><td class="PkCol"><a href="../columns/CVs_InstanceName_InstanceNameID.html">InstanceNameID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="PkCol"> </td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/CVs_InstanceName_InstanceName.html">InstanceName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Controlled vocabulary term</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/CVs_InstanceName_Definition.html">Definition</a></td><td>Text</td><td>
@@ -63,7 +69,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceName.html">fk_Instances_InstanceName</a></td><td><a href="../tables/CVs_InstanceName.html">CVs.InstanceName</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>Term</td><td>InstanceName</td>
+<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceName.html">fk_Instances_InstanceName</a></td><td><a href="../tables/CVs_InstanceName.html">CVs.InstanceName</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceNameID</td><td>InstanceNameCVID</td>
 </tr>
 </table>
 <br>

@@ -7,7 +7,7 @@
 <Body>
 <table class="logo">
 <tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct10_2016.xml]</td>
+<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
 </tr>
 </table>
 <table class="horzMenu">
@@ -63,13 +63,13 @@
 </td><td> </td><td> </td><td>Full text description of the method	</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term that provides the method type  like sample, simulation, optimization, or field procedure. The method type corresponds to &ldquo;value type&rdquo; attribute in the Observations Data Model </td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a person</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a person</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeID.html">MethodTypeID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -90,7 +90,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodType.html">fk_Methods_MethodType</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Term</td><td>MethodTypeCV</td>
+<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_MethodType.html">fk_Methods_MethodType</a></td><td><a href="../tables/CVs_MethodType.html">CVs.MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>MethodTypeID</td><td>MethodTypeID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Metadata_Methods_fk_Methods_People.html">fk_Methods_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>PersonID</td><td>PersonID</td>
