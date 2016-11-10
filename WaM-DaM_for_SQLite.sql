@@ -16,13 +16,13 @@
 /***************************************************************************/
 
 CREATE TABLE AggregationStatistic (
-	AggregationStatisticID INTEGER   NOT NULL,
+	AggregationStatisticID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AggregationStatistic VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE AttributeCategoryCV (
-	AttributeCategoryID INTEGER   NOT NULL,
+	AttributeCategoryID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AttributeCategoryName VARCHAR (255)  NOT NULL,
 	CategoryDefinition TEXT   NULL,
 	ParentAttributeCategoryID INTEGER   NULL,
@@ -31,7 +31,7 @@ CREATE TABLE AttributeCategoryCV (
 );
 
 CREATE TABLE AttributesCV (
-	AttributeID INTEGER   NOT NULL,
+	AttributeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AttributeName VARCHAR (255)  NOT NULL,
 	AttributeDefinition TEXT   NULL,
 	AttributeCategoryID INTEGER   NULL,
@@ -40,38 +40,38 @@ CREATE TABLE AttributesCV (
 );
 
 CREATE TABLE AttributeTypeCode (
-	AttributeTypeCodeID INTEGER   NOT NULL,
+	AttributeTypeCodeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AttributeTypeCode VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE BinaryValueMeaning (
-	BinaryValueMeaningID INTEGER   NOT NULL PRIMARY KEY,
+	BinaryValueMeaningID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	BinaryAttribute VARCHAR (255)  NOT NULL,
 	BinaryValue BINARY (1)  NOT NULL,
 	ValueDefinition TEXT   NOT NULL
 );
 
 CREATE TABLE FileFormat (
-	FileFormatID INTEGER   NOT NULL,
+	FileFormatID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	FileFormat VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE InstanceName (
-	InstanceNameID INTEGER   NOT NULL PRIMARY KEY,
+	InstanceNameID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	InstanceName VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE MethodType (
-	MethodTypeID INTEGER   NOT NULL,
+	MethodTypeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	MethodType VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE ObjectCategoryCV (
-	ObjectCategoryID INTEGER   NOT NULL,
+	ObjectCategoryID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectCategoryName VARCHAR (255)  NOT NULL,
 	CategoryDefinition TEXT   NULL,
 	ParentObjectCategoryID INTEGER   NULL,
@@ -80,7 +80,7 @@ CREATE TABLE ObjectCategoryCV (
 );
 
 CREATE TABLE ObjectTypesCV (
-	ObjectTypeID INTEGER   NOT NULL,
+	ObjectTypeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectType VARCHAR (255)  NOT NULL,
 	ObjectTopology VARCHAR (50)  NULL,
 	ObjectDefinition TEXT   NULL,
@@ -90,13 +90,13 @@ CREATE TABLE ObjectTypesCV (
 );
 
 CREATE TABLE SeasonName (
-	SeasonNameID INTEGER   NOT NULL,
+	SeasonNameID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	SeasonName VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
 
 CREATE TABLE SpatialReference (
-	SpatialReferenceID INTEGER   NOT NULL,
+	SpatialReferenceID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	SRSName VARCHAR (500)  NOT NULL,
 	SRSID INTEGER   NOT NULL,
 	IsGeographic INTEGER   NOT NULL,
@@ -104,14 +104,14 @@ CREATE TABLE SpatialReference (
 );
 
 CREATE TABLE TextControlledValues (
-	TextControlledValueID INTEGER   NOT NULL PRIMARY KEY,
+	TextControlledValueID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TextControlledValue VARCHAR (255)  NOT NULL,
 	TextControlledAttribute VARCHAR (255)  NOT NULL,
 	ValueDefinition TEXT   NULL
 );
 
 CREATE TABLE Units (
-	UnitID INTEGER   NOT NULL PRIMARY KEY,
+	UnitID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	UnitType VARCHAR (255)  NOT NULL,
 	UnitName VARCHAR (255)  NOT NULL,
 	UnitSystem VARCHAR (255)  NULL,
@@ -119,7 +119,7 @@ CREATE TABLE Units (
 );
 
 CREATE TABLE VerticalDatum (
-	VerticalDatumID INTEGER   NOT NULL,
+	VerticalDatumID INTEGER  AUTO_INCREMENT NOT NULL,
 	VerticalDatum VARCHAR (255)  NOT NULL,
 	Definition TEXT   NULL
 );
@@ -129,7 +129,7 @@ CREATE TABLE VerticalDatum (
 /***************************************************************************/
 
 CREATE TABLE Binarys (
-	BinaryID INTEGER   NOT NULL PRIMARY KEY,
+	BinaryID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	BinaryValue BINARY (1)  NOT NULL,
 	DataValuesMapperID INTEGER   NOT NULL,
 	BinaryValueMeaningCVID INTEGER   NOT NULL,
@@ -140,11 +140,11 @@ CREATE TABLE Binarys (
 );
 
 CREATE TABLE DataValuesMapper (
-	DataValuesMapperID INTEGER   NOT NULL PRIMARY KEY
+	DataValuesMapperID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY
 );
 
 CREATE TABLE FileBased (
-	FileBasedID INTEGER   NOT NULL PRIMARY KEY,
+	FileBasedID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	FileName VARCHAR (255)  NOT NULL,
 	FileLocationOnDesk VARCHAR (255)  NOT NULL,
 	Description TEXT   NULL,
@@ -157,7 +157,7 @@ CREATE TABLE FileBased (
 );
 
 CREATE TABLE MultiColumnArray (
-	MultiColumnID INTEGER   NOT NULL PRIMARY KEY,
+	MultiColumnID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ColumnNameID INTEGER   NOT NULL,
 	DataValuesMapperID INTEGER   NOT NULL,
 	FOREIGN KEY (DataValuesMapperID) REFERENCES DataValuesMapper (DataValuesMapperID)
@@ -167,7 +167,7 @@ CREATE TABLE MultiColumnArray (
 );
 
 CREATE TABLE MultiColumnValues (
-	MultiColumnValueID INTEGER   NOT NULL PRIMARY KEY,
+	MultiColumnValueID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	Value VARCHAR (255)  NOT NULL,
 	ValueOrder INTEGER   NOT NULL,
 	MultiColumnID INTEGER   NOT NULL,
@@ -176,7 +176,7 @@ CREATE TABLE MultiColumnValues (
 );
 
 CREATE TABLE Parameters (
-	ParameterID INTEGER   NOT NULL PRIMARY KEY,
+	ParameterID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ParameterValue FLOAT   NOT NULL,
 	DataValuesMapperID INTEGER   NOT NULL,
 	FOREIGN KEY (DataValuesMapperID) REFERENCES DataValuesMapper (DataValuesMapperID)
@@ -184,7 +184,7 @@ CREATE TABLE Parameters (
 );
 
 CREATE TABLE SeasonalParameters (
-	SeasonalParameterID INTEGER   NOT NULL PRIMARY KEY,
+	SeasonalParameterID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	SeasonStartDateTime VARCHAR (50)  NULL,
 	SeasonEndDateTime VARCHAR (50)  NULL,
 	SeasonValue VARCHAR (500)  NOT NULL,
@@ -197,7 +197,7 @@ CREATE TABLE SeasonalParameters (
 );
 
 CREATE TABLE TextControlled (
-	TextControlledID INTEGER   NOT NULL PRIMARY KEY,
+	TextControlledID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TextControlledValueCVID INTEGER   NOT NULL,
 	DataValuesMapperID INTEGER   NOT NULL,
 	FOREIGN KEY (TextControlledValueCVID) REFERENCES TextControlledValues (TextControlledValueID)
@@ -207,7 +207,7 @@ CREATE TABLE TextControlled (
 );
 
 CREATE TABLE TextFree (
-	TextFreeID INTEGER   NOT NULL PRIMARY KEY,
+	TextFreeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TextFreeValue VARCHAR (500)  NOT NULL,
 	DataValuesMapperID INTEGER   NOT NULL,
 	FOREIGN KEY (DataValuesMapperID) REFERENCES DataValuesMapper (DataValuesMapperID)
@@ -215,7 +215,7 @@ CREATE TABLE TextFree (
 );
 
 CREATE TABLE TimeSeries (
-	TimeSeriesID INTEGER   NOT NULL PRIMARY KEY,
+	TimeSeriesID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AggregationInterval DOUBLE   NOT NULL,
 	IntervalTimeUnitID INTEGER   NOT NULL,
 	BeginDateTime DATETIME   NULL,
@@ -234,7 +234,7 @@ CREATE TABLE TimeSeries (
 );
 
 CREATE TABLE TimeSeriesValues (
-	TimeSeriesValueID INTEGER   NOT NULL PRIMARY KEY,
+	TimeSeriesValueID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	TimeSeriesID INTEGER   NOT NULL,
 	DateTimeStamp DATETIME   NOT NULL,
 	Value FLOAT   NOT NULL,
@@ -247,7 +247,7 @@ CREATE TABLE TimeSeriesValues (
 /***************************************************************************/
 
 CREATE TABLE AttributeCategory (
-	AttributeCategoryID INTEGER   NOT NULL PRIMARY KEY,
+	AttributeCategoryID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	CategoryName VARCHAR (255)  NOT NULL,
 	CategoryDefinition TEXT   NULL,
 	CategoryGroup VARCHAR (255)  NULL,
@@ -257,7 +257,7 @@ CREATE TABLE AttributeCategory (
 );
 
 CREATE TABLE Methods (
-	MethodID INTEGER   NOT NULL PRIMARY KEY,
+	MethodID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	MethodName VARCHAR (255)  NOT NULL,
 	MethodCode VARCHAR (50)  NOT NULL,
 	MethodWebpage VARCHAR (255)  NULL,
@@ -272,7 +272,7 @@ CREATE TABLE Methods (
 );
 
 CREATE TABLE ObjectCategory (
-	ObjectCategoryID INTEGER   NOT NULL PRIMARY KEY,
+	ObjectCategoryID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	CategoryName VARCHAR (255)  NOT NULL,
 	CategoryDefinition TEXT   NULL,
 	ObjectGroup VARCHAR (500)  NULL,
@@ -282,7 +282,7 @@ CREATE TABLE ObjectCategory (
 );
 
 CREATE TABLE Organizations (
-	OrganizationID INTEGER   NOT NULL PRIMARY KEY,
+	OrganizationID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	OrganizationName VARCHAR (255)  NOT NULL,
 	OrganizationType VARCHAR (255)  NULL,
 	OrganizationWebpage VARCHAR (255)  NULL,
@@ -290,7 +290,7 @@ CREATE TABLE Organizations (
 );
 
 CREATE TABLE People (
-	PersonID INTEGER   NOT NULL PRIMARY KEY,
+	PersonID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ContactName VARCHAR (255)  NOT NULL,
 	Address VARCHAR (255)  NULL,
 	Email VARCHAR (255)  NULL,
@@ -303,7 +303,7 @@ CREATE TABLE People (
 );
 
 CREATE TABLE Sources (
-	SourceID INTEGER   NOT NULL PRIMARY KEY,
+	SourceID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	SourceName VARCHAR (500)  NOT NULL,
 	SourceCode VARCHAR (50)  NOT NULL,
 	SourceWebpage VARCHAR (500)  NULL,
@@ -319,7 +319,7 @@ CREATE TABLE Sources (
 /***************************************************************************/
 
 CREATE TABLE Connections (
-	ConnectivityID INTEGER   NOT NULL PRIMARY KEY,
+	ConnectivityID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	LinkInstanceID INTEGER   NOT NULL,
 	StartNodeInstanceID INTEGER   NOT NULL,
 	EndNodeInstanceID INTEGER   NOT NULL,
@@ -332,7 +332,7 @@ CREATE TABLE Connections (
 );
 
 CREATE TABLE Instances (
-	InstanceID INTEGER   NOT NULL PRIMARY KEY,
+	InstanceID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	InstanceName VARCHAR (255)  NOT NULL,
 	InstanceCode VARCHAR (255)  NULL,
 	Longitude FLOAT   NULL,
@@ -344,13 +344,13 @@ CREATE TABLE Instances (
 );
 
 CREATE TABLE Mapping (
-	MappingID INTEGER   NOT NULL PRIMARY KEY,
+	MappingID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectAttributeID INTEGER   NOT NULL,
 	InstanceID INTEGER   NOT NULL,
 	SourceID INTEGER   NOT NULL,
 	MethodID INTEGER   NOT NULL,
-	DataStorageID INTEGER   NULL,
-	FOREIGN KEY (DataStorageID) REFERENCES DataValuesMapper (DataValuesMapperID)
+	DataValuesMapperID INTEGER   NULL,
+	FOREIGN KEY (DataValuesMapperID) REFERENCES DataValuesMapper (DataValuesMapperID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY (InstanceID) REFERENCES Instances (InstanceID)
 	ON UPDATE NO ACTION ON DELETE NO ACTION,
@@ -363,7 +363,7 @@ CREATE TABLE Mapping (
 );
 
 CREATE TABLE MasterNetworks (
-	MasterNetworkID INTEGER   NOT NULL PRIMARY KEY,
+	MasterNetworkID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	MasterNetworkName VARCHAR (255)  NOT NULL,
 	SpatialReferenceCVID INTEGER   NULL,
 	ParenMasterNetwork INTEGER   NULL,
@@ -378,7 +378,7 @@ CREATE TABLE MasterNetworks (
 );
 
 CREATE TABLE ScenarioMapping (
-	ScenarioMappingID INTEGER   NOT NULL PRIMARY KEY,
+	ScenarioMappingID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ScenarioID INTEGER   NOT NULL,
 	MappingID INTEGER   NOT NULL,
 	FOREIGN KEY (MappingID) REFERENCES Mapping (MappingID)
@@ -388,7 +388,7 @@ CREATE TABLE ScenarioMapping (
 );
 
 CREATE TABLE Scenarios (
-	ScenarioID INTEGER   NOT NULL PRIMARY KEY,
+	ScenarioID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ScenarioName VARCHAR (255)  NOT NULL,
 	StartTime DATETIME   NULL,
 	EndTime DATETIME   NULL,
@@ -407,7 +407,7 @@ CREATE TABLE Scenarios (
 /***************************************************************************/
 
 CREATE TABLE Attributes (
-	AttributeID INTEGER   NOT NULL PRIMARY KEY,
+	AttributeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	AttributeName VARCHAR (255)  NOT NULL,
 	AttributeCode VARCHAR (50)  NOT NULL,
 	UnitID INTEGER   NOT NULL,
@@ -420,7 +420,7 @@ CREATE TABLE Attributes (
 );
 
 CREATE TABLE DataStructure (
-	DataStructureID INTEGER   NOT NULL PRIMARY KEY,
+	DataStructureID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	DataStructureName VARCHAR (255)  NOT NULL,
 	DataStrucutureAcronym  VARCHAR (255)  NULL,
 	DataStructureDomain VARCHAR (255)  NULL,
@@ -429,7 +429,7 @@ CREATE TABLE DataStructure (
 );
 
 CREATE TABLE ObjectAttributes (
-	ObjectAttributeID INTEGER   NOT NULL PRIMARY KEY,
+	ObjectAttributeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectTypeID INTEGER   NOT NULL,
 	AttributeID INTEGER   NOT NULL,
 	ObjectAttributeCode VARCHAR (50)  NULL,
@@ -447,7 +447,7 @@ CREATE TABLE ObjectAttributes (
 );
 
 CREATE TABLE ObjectTypes (
-	ObjectTypeID INTEGER   NOT NULL PRIMARY KEY,
+	ObjectTypeID INTEGER  AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	ObjectType VARCHAR (255)  NOT NULL,
 	ObjectCode VARCHAR (50)  NULL,
 	ObjectTopology VARCHAR (50)  NOT NULL,
