@@ -1,33 +1,25 @@
 <HTML>
-<Header>
-<Title>TextFree - Table</Title>
+<header>
+<title>TextFree - Table</title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<Link href="../css/doc.css" rel="stylesheet" type="text/css">
-</Header>
-<Body>
-<table class="logo">
-<tr>
-<td class="logo">WaM-DaM1.0 [WaMDaMOct26_2016.xml]</td>
-</tr>
-</table>
-<table class="horzMenu">
-<tr>
-<td class="horzMenu"><a class="horzMenu" href="../index.html"> Home</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../tables/index.html">Tables</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../schemas/index.html">Schemas</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../diagrams/index.html">Diagrams</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a></td><td class="horzMenu">|</td><td class="horzMenu"><a class="horzMenu" href="../indexes/index.html">Indexes</a></td><td class="horzMenuFiller"></td>
-</tr>
-</table>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</header>
+<body>
+<div class="logo">
+<p>WaM-DaM1.0 [WaMDaMDec10_2016.xml]</p>
+</div>
+<div class="horzMenu">
+<a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
+</div>
 <hr>
-<table class="pageTitle">
-<tr class="altRow">
-<td class="title_nm">TextFree</td><td class="watermark_right">This table stores descriptive text data values and helps users to flex...</td>
-</tr>
-</table>
-<br>
+<h1>Table: TextFree</h1>
+<div class="paragraph">
+<p>This table stores descriptive text data values and helps users to flexibly add metadata that describe their water system operation. For example, a dam release rule could be described in text as the dam operator narrates their experience on how they release water from a dam. Another example is a &ldquo;dam owner name&rdquo; as Cache County or PacifiCorp.</p>
+</div>
+<h2>Columns</h2>
 <table class="flat">
 <tr>
-<td class="banner" colspan="8">Columns</td>
-</tr>
-<tr>
-<td class="Header">PK</td><td class="Header">Name</td><td class="Header">Data Type</td><td class="Header">NULLs</td><td class="Header">A/N</td><td class="Header">Default</td><td class="Header">Comment</td><td class="Header">FK</td>
+<td class="header">PK</td><td class="header">Name</td><td class="header">Data Type</td><td class="header">NULL</td><td class="header">Auto</td><td class="header">Default</td><td class="header">Comment</td><td class="header">FK</td>
 </tr>
 <tr>
 <td class="PkCol">
@@ -49,36 +41,25 @@
 </tr>
 </table>
 <br>
-<table class="flat">
-<tr>
-<td class="banner" colspan="1">Indexes<span class="plain"> (none)</span></td>
-</tr>
-</table>
+<h2>Indexes</h2>
+<div class="paragraph">
+<p>(none)</p>
+</div>
 <br>
+<h2>Foreign Keys</h2>
 <table class="flat">
-<tr>
-<td class="banner" colspan="5">Foreign Keys</td>
-</tr>
 <tr>
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TextFree_fk_FreeText_DataStorage.html">fk_FreeText_DataStorage</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextFree.html">DataValues.TextFree</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_TextFree_fk_TextFree_DataValuesMapper.html">fk_TextFree_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextFree.html">DataValues.TextFree</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 </table>
 <br>
+<h2>Used in Diagrams</h2>
 <table class="flat">
 <tr>
-<td class="banner" colspan="1">Parent Relations<span class="plain"> (none)</span></td>
-</tr>
-</table>
-<br>
-<table class="flat">
-<tr>
-<td class="banner" colspan="1">Used in Diagrams</td>
-</tr>
-<tr>
-<td class="Header">Diagram Name</td>
+<td class="header">Diagram Name</td>
 </tr>
 <tr>
 <td><a href="../diagrams/01_WaMDaM.html">01_WaMDaM</a></td>
@@ -87,5 +68,5 @@
 <td><a href="../diagrams/03_DataValues.html">03_DataValues</a></td>
 </tr>
 </table>
-</Body>
+</body>
 </HTML>
