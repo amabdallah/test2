@@ -31,7 +31,7 @@
 </td><td class="PkCol">nextval('"Storage"."TimeSeries_TimeSeriesID_seq"'::regclass)</td><td class="PkCol"> Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_AggregationStatisticID.html">AggregationStatisticID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifer</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_AggregationStatistiCVID.html">AggregationStatistiCVID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifer</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -40,7 +40,7 @@
 <td> </td><td><a href="../columns/DataValues_TimeSeries_AggregationInterval.html">AggregationInterval</a></td><td>Double</td><td> </td><td> </td><td> </td><td>The interval referes to time support which is the time interval when statistical aggregation applies to a set of measurement and then the aggregated value is reported (e.g., hourly measurement values are averaged over a day to report daily values)</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_IntervalTimeUnitID.html">IntervalTimeUnitID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for a unit</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_IntervalTimeUnitCVID.html">IntervalTimeUnitCVID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for a unit</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -94,13 +94,13 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_AggregationStatistic.html">fk_TimeSeries_AggregationStatistic</a></td><td><a href="../tables/CVs_AggregationStatistic.html">CVs.AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>AggregationStatisticID</td><td>AggregationStatisticID</td>
+<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_AggregationStatistic.html">fk_TimeSeries_AggregationStatistic</a></td><td><a href="../tables/CVs_AggregationStatistic.html">CVs.AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>AggregationStatisticCVID</td><td>AggregationStatistiCVID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_DataValuesMapper.html">fk_TimeSeries_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_Units.html">fk_TimeSeries_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>UnitID</td><td>IntervalTimeUnitID</td>
+<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_Units.html">fk_TimeSeries_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>UnitCVID</td><td>IntervalTimeUnitCVID</td>
 </tr>
 </table>
 <br>

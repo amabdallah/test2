@@ -33,7 +33,7 @@
 <td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatID</td><td>FileFormatID</td>
+<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatCVID</td><td>FileFormatCVID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/DataValues_MultiColumnArrays_fk_MultiColumnArray_DataValuesMapper.html">fk_MultiColumnArray_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiColumnArrays.html">DataValues.MultiColumnArrays</a></td><td>DataValuesMapperID</td><td>ColumnNameID</td>
@@ -51,10 +51,10 @@
 <td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_DataValuesMapper.html">fk_SeasonalParameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>SeasonNameID</td><td>SeasonNameCVID</td>
+<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_SeasonName.html">fk_SeasonalParameters_SeasonName</a></td><td><a href="../tables/CVs_SeasonName.html">CVs.SeasonName</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>SeasonNameCVID</td><td>SeasonNameCVID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TextControlled_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_TextControlledValues.html">CVs.TextControlledValues</a></td><td><a href="../tables/DataValues_TextControlled.html">DataValues.TextControlled</a></td><td>TextControlledValueID</td><td>TextControlledValueCVID</td>
+<td><a href="../foreignKeys/DataValues_TextControlled_fk_ControlledText_ControlledTextValues.html">fk_ControlledText_ControlledTextValues</a></td><td><a href="../tables/CVs_TextControlledValues.html">CVs.TextControlledValues</a></td><td><a href="../tables/DataValues_TextControlled.html">DataValues.TextControlled</a></td><td>TextControlledValueCVID</td><td>TextControlledValueCVID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/DataValues_TextControlled_fk_TextControlled_DataValuesMapper.html">fk_TextControlled_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextControlled.html">DataValues.TextControlled</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
@@ -63,13 +63,13 @@
 <td><a href="../foreignKeys/DataValues_TextFree_fk_TextFree_DataValuesMapper.html">fk_TextFree_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextFree.html">DataValues.TextFree</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_AggregationStatistic.html">fk_TimeSeries_AggregationStatistic</a></td><td><a href="../tables/CVs_AggregationStatistic.html">CVs.AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>AggregationStatisticID</td><td>AggregationStatisticID</td>
+<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_AggregationStatistic.html">fk_TimeSeries_AggregationStatistic</a></td><td><a href="../tables/CVs_AggregationStatistic.html">CVs.AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>AggregationStatisticCVID</td><td>AggregationStatistiCVID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_DataValuesMapper.html">fk_TimeSeries_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_Units.html">fk_TimeSeries_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>UnitID</td><td>IntervalTimeUnitID</td>
+<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_Units.html">fk_TimeSeries_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>UnitCVID</td><td>IntervalTimeUnitCVID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/DataValues_TimeSeriesValues_fk_TimeSeriesValues_TimeSeries.html">fk_TimeSeriesValues_TimeSeries</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td><a href="../tables/DataValues_TimeSeriesValues.html">DataValues.TimeSeriesValues</a></td><td>TimeSeriesID</td><td>TimeSeriesID</td>
@@ -129,7 +129,7 @@
 <td><a href="../foreignKeys/Networks_Scenarios_fk_Scenarios_MasterNetworks.html">fk_Scenarios_MasterNetworks</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td>MasterNetworkID</td><td>MasterNetworkID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Networks_Scenarios_fk_Scenarios_Units.html">fk_Scenarios_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td>UnitID</td><td>TimeStepUnitCVID</td>
+<td><a href="../foreignKeys/Networks_Scenarios_fk_Scenarios_Units.html">fk_Scenarios_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td>UnitCVID</td><td>TimeStepUnitCVID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/Structures_Attributes_fk_Attributes_AttributeCategory.html">fk_Attributes_AttributeCategory</a></td><td><a href="../tables/Structures_AttributeCategory.html">Structures.AttributeCategory</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td>AttributeCategoryID</td><td>AttributeCategoryID</td>
@@ -138,13 +138,13 @@
 <td><a href="../foreignKeys/Structures_Attributes_fk_Attributes_AttributesCV.html">fk_Attributes_AttributesCV</a></td><td><a href="../tables/CVs_AttributesCV.html">CVs.AttributesCV</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td>AttributeCVID</td><td>AttributeNameCVID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Structures_Attributes_fk_Attributes_Units.html">fk_Attributes_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td>UnitID</td><td>UnitCVID</td>
+<td><a href="../foreignKeys/Structures_Attributes_fk_Attributes_Units.html">fk_Attributes_Units</a></td><td><a href="../tables/CVs_Units.html">CVs.Units</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td>UnitCVID</td><td>UnitCVID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_Attributes.html">fk_ObjectAttributes_Attributes</a></td><td><a href="../tables/Structures_Attributes.html">Structures.Attributes</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeID</td><td>AttributeID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_AttributeTypeCode.html">fk_ObjectAttributes_AttributeTypeCode</a></td><td><a href="../tables/CVs_AttributeType.html">CVs.AttributeType</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeTypeCVID</td><td>AttributeTypeCVID</td>
+<td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_AttributeTypeCode.html">fk_ObjectAttributes_AttributeTypeCode</a></td><td><a href="../tables/CVs_AttributeTypes.html">CVs.AttributeTypes</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>AttributeTypeCVID</td><td>AttributeTypeCVID</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/Structures_ObjectAttributes_fk_ObjectAttributes_ObjectTypes.html">fk_ObjectAttributes_ObjectTypes</a></td><td><a href="../tables/Structures_ObjectTypes.html">Structures.ObjectTypes</a></td><td><a href="../tables/Structures_ObjectAttributes.html">Structures.ObjectAttributes</a></td><td>ObjectTypeID</td><td>ObjectTypeID</td>
