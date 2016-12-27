@@ -1,0 +1,93 @@
+<HTML>
+<header>
+<title>MasterNetworks - Table</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</header>
+<body>
+<div class="logo">
+<p>WaM-DaM1.0 [WaMDaMDec26_2016.xml]</p>
+</div>
+<div class="horzMenu">
+<a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
+</div>
+<hr>
+<h1>Table: MasterNetworks</h1>
+<div class="paragraph">
+<p>A Master Network is a specific implementation of a Data Structure, its Instances, and data values within a spatial location (e.g., Bear River Watershed, Utah). Master Networks help researchers to organize and then search groups of Instances that belong to a Data Structure in space. For example, a Data Structure for a WEAP model can be used to create separate WEAP model for the Bear River and the Weber River watersheds in Utah.</p>
+</div>
+<h2>Columns</h2>
+<table class="flat">
+<tr>
+<td class="header">PK</td><td class="header">Name</td><td class="header">Data Type</td><td class="header">NULL</td><td class="header">Auto</td><td class="header">Default</td><td class="header">Comment</td><td class="header">FK</td>
+</tr>
+<tr>
+<td class="PkCol">
+<p class="boolImg">
+<img src="../images/pkb16.gif"></p>
+</td><td class="PkCol"><a href="../columns/Networks_MasterNetworks_MasterNetworkID.html">MasterNetworkID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="PkCol">nextval('"Core"."MasterNetworks_MasterNetworkID_seq"'::regclass)</td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Networks_MasterNetworks_MasterNetworkName.html">MasterNetworkName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Text name for the Master Network</td><td> </td>
+</tr>
+<tr>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Networks_MasterNetworks_SpatialReferenceCVID.html">SpatialReferenceCVID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Spatial Reference system that describes the latitude and longitude coordinates</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Networks_MasterNetworks_VerticalDatumCVID.html">VerticalDatumCVID</a></td><td class="FkCol">Integer</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary key identifier</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Networks_MasterNetworks_Description.html">Description</a></td><td>Text</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Text description of the MasterNetwork</td><td> </td>
+</tr>
+</table>
+<br>
+<h2>Indexes</h2>
+<div class="paragraph">
+<p>(none)</p>
+</div>
+<br>
+<h2>Foreign Keys</h2>
+<table class="flat">
+<tr>
+<td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Networks_MasterNetworks_fk_MasterNetworks_SpatialReference.html">fk_MasterNetworks_SpatialReference</a></td><td><a href="../tables/CVs_SpatialReference.html">CVs.SpatialReference</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td>SpatialReferenceCVID</td><td>SpatialReferenceCVID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/Networks_MasterNetworks_fk_MasterNetworks_VerticalDatum.html">fk_MasterNetworks_VerticalDatum</a></td><td><a href="../tables/CVs_VerticalDatum.html">CVs.VerticalDatum</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td>VerticalDatumCVID</td><td>VerticalDatumCVID</td>
+</tr>
+</table>
+<br>
+<h2>Used in Diagrams</h2>
+<table class="flat">
+<tr>
+<td class="header">Diagram Name</td>
+</tr>
+<tr>
+<td><a href="../diagrams/01_WaMDaM.html">01_WaMDaM</a></td>
+</tr>
+<tr>
+<td><a href="../diagrams/02_Networks.html">02_Networks</a></td>
+</tr>
+</table>
+</body>
+</HTML>
