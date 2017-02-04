@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb2_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMFeb4_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -37,7 +37,7 @@
 <td> </td><td><a href="../columns/DataValues_FileBased_FileLocationOnDesk.html">FileLocationOnDesk</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>a path link tot he the file on desk (e.g., C:\Users\WaM-DaM.jpg</td><td> </td>
 </tr>
 <tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_FileBased_FileFormatCVID.html">FileFormatCVID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifier</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_FileBased_FileFormatCV.html">FileFormatCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifier</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -67,10 +67,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_CV_FileFormat.html">fk_FileBased_CV_FileFormat</a></td><td><a href="../tables/CVs_CV_FileFormat.html">CVs.CV_FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatCV</td><td>FileFormatCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_FileFormat.html">fk_FileBased_FileFormat</a></td><td><a href="../tables/CVs_FileFormat.html">CVs.FileFormat</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>FileFormatCVID</td><td>FileFormatCVID</td>
+<td><a href="../foreignKeys/DataValues_FileBased_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_FileBased.html">DataValues.FileBased</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 </table>
 <br>

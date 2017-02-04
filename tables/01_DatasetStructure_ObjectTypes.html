@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb2_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMFeb4_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -34,34 +34,34 @@
 <td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectType.html">ObjectType</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Specifies the name for the object as used in the data structure like WEAP</td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectTopologyCV.html">ObjectTopologyCV</a></td><td>VarChar(50)</td><td> </td><td> </td><td> </td><td>A text that identifies the topology of the Object Type instance as either Node or Link</td><td> </td>
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectTypeCV.html">ObjectTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">an ObjectType</td><td class="FkCol">
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td>
 </tr>
 <tr class="altRow">
+<td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectTopologyCV.html">ObjectTopologyCV</a></td><td>VarChar(50)</td><td> </td><td> </td><td> </td><td>A text that identifies the topology of the Object Type instance as either Node or Link</td><td> </td>
+</tr>
+<tr>
 <td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_MapColor.html">MapColor</a></td><td>VarChar(50)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>Specifies the color of the object if used in a user interface e.g., red and green </td><td> </td>
 </tr>
-<tr>
+<tr class="altRow">
 <td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_MapSymbol.html">MapSymbol</a></td><td>VarChar(50)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>Specifies the object shape in case it is used in a user interface e.g., square and circle</td><td> </td>
 </tr>
-<tr class="altRow">
+<tr>
 <td> </td><td><a href="../columns/01_DatasetStructure_ObjectTypes_Description.html">Description</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td><td> </td><td> </td><td>Full text description of the Object type</td><td> </td>
-</tr>
-<tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectTypeCVID.html">ObjectTypeCVID</a></td><td class="FkCol">Integer</td><td class="FkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for an ObjectType</td><td class="FkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/01_DatasetStructure_ObjectTypes_ObjectCategoryID.html">ObjectCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
@@ -97,7 +97,7 @@
 <td><a href="../foreignKeys/01_DatasetStructure_ObjectTypes_fk_ObjectTypes_ObjectCategory.html">fk_ObjectTypes_ObjectCategory</a></td><td><a href="../tables/01_DatasetStructure_ObjectCategory.html">01_DatasetStructure.ObjectCategory</a></td><td><a href="../tables/01_DatasetStructure_ObjectTypes.html">01_DatasetStructure.ObjectTypes</a></td><td>ObjectCategoryID</td><td>ObjectCategoryID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/01_DatasetStructure_ObjectTypes_fk_ObjectTypes_ObjectTypesCV.html">fk_ObjectTypes_ObjectTypesCV</a></td><td><a href="../tables/CVs_ObjectTypesCV.html">CVs.ObjectTypesCV</a></td><td><a href="../tables/01_DatasetStructure_ObjectTypes.html">01_DatasetStructure.ObjectTypes</a></td><td>ObjectTypeCVID</td><td>ObjectTypeCVID</td>
+<td><a href="../foreignKeys/01_DatasetStructure_ObjectTypes_fk_ObjectTypes_ObjectTypesCV.html">fk_ObjectTypes_ObjectTypesCV</a></td><td><a href="../tables/CVs_CV_ObjectType.html">CVs.CV_ObjectType</a></td><td><a href="../tables/01_DatasetStructure_ObjectTypes.html">01_DatasetStructure.ObjectTypes</a></td><td>ObjectTypeCV</td><td>ObjectTypeCV</td>
 </tr>
 </table>
 <br>
