@@ -1,0 +1,3 @@
+Check out this query for the multicolumn array on this attached excel for a simple example. 
+The MultiColumns_results spreadsheet shows the query results as is and how they should be, as far as the ValueOrder. 
+The thing here to fix is that the sequential order of values for one column should be the same for the other columns.
