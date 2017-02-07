@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb6_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMJan7_update_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -37,10 +37,34 @@
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Networks_Instances_InstanceNameCV.html">InstanceNameCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary key identifier</td><td class="FkCol">
+</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Networks_Instances_Longitude_x.html">Longitude_x</a></td><td>Float</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Longitude of the instance</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Networks_Instances_Latitude_y.html">Latitude_y</a></td><td>Float</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Latitude of the instance </td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Networks_Instances_Description.html">Description</a></td><td>Text</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Networks_Instances_InstanceNameCVID.html">InstanceNameCVID</a></td><td>Integer</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td>Primary key identifier</td><td> </td>
 </tr>
 <tr class="altRow">
 <td class="FkCol"> </td><td class="FkCol"><a href="../columns/Networks_Instances_InstanceCategoryID.html">InstanceCategoryID</a></td><td class="FkCol">Integer</td><td class="FkCol">
@@ -50,24 +74,6 @@
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
-</tr>
-<tr>
-<td> </td><td><a href="../columns/Networks_Instances_Longitude_x.html">Longitude_x</a></td><td>Float</td><td>
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Longitude of the instance</td><td> </td>
-</tr>
-<tr class="altRow">
-<td> </td><td><a href="../columns/Networks_Instances_Latitude_y.html">Latitude_y</a></td><td>Float</td><td>
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Latitude of the instance </td><td> </td>
-</tr>
-<tr>
-<td> </td><td><a href="../columns/Networks_Instances_Description.html">Description</a></td><td>Text</td><td>
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>A text description of the organization</td><td> </td>
 </tr>
 </table>
 <br>
@@ -82,10 +88,10 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceCategory.html">fk_Instances_InstanceCategory</a></td><td><a href="../tables/Networks_InstanceCategory.html">Networks.InstanceCategory</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceCategoryID</td><td>InstanceCategoryID</td>
+<td><a href="../foreignKeys/Networks_Instances_fk_Instances_CV_InstanceName.html">fk_Instances_CV_InstanceName</a></td><td><a href="../tables/CVs_CV_InstanceName.html">CVs.CV_InstanceName</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceNameCV</td><td>InstanceNameCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceName.html">fk_Instances_InstanceName</a></td><td><a href="../tables/CVs_CV_InstanceName.html">CVs.CV_InstanceName</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceNameCVTerm</td><td>InstanceNameCV</td>
+<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceCategory.html">fk_Instances_InstanceCategory</a></td><td><a href="../tables/Networks_InstanceCategory.html">Networks.InstanceCategory</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceCategoryID</td><td>InstanceCategoryID</td>
 </tr>
 </table>
 <br>
@@ -95,10 +101,7 @@
 <td class="header">Diagram Name</td>
 </tr>
 <tr>
-<td><a href="../diagrams/01_WaMDaM_NoCVs.html">01_WaMDaM_NoCVs</a></td>
-</tr>
-<tr>
-<td><a href="../diagrams/03_WaMDaM_wCVs.html">03_WaMDaM_wCVs</a></td>
+<td><a href="../diagrams/01_WaMDaM.html">01_WaMDaM</a></td>
 </tr>
 </table>
 </body>

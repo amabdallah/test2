@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb6_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMJan7_update_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -18,10 +18,10 @@
 <td class="header">Table Name</td><td class="header">Comment</td><td class="header">Schema</td>
 </tr>
 <tr>
-<td><a href="01_DatasetStructure_AttributeCategory.html">AttributeCategory</a></td><td>Orgnaizes native attributes into  hierarchal categories in their original data source  like hydropower category which groups all attributes that belong to hydropower </td><td>01_DatasetStructure</td>
+<td><a href="DatasetStructure_AttributeCategory.html">AttributeCategory</a></td><td>Orgnaizes native attributes into  hierarchal categories in their original data source  like hydropower category which groups all attributes that belong to hydropower </td><td>DatasetStructure</td>
 </tr>
 <tr class="altRow">
-<td><a href="01_DatasetStructure_Attributes.html">Attributes</a></td><td>It is a bridge tables that allow associating many Object Types with many attributes. Users also can share the same native attribute across different object types like Capital Cost attribute that is shared for all the WEAP Objects</td><td>01_DatasetStructure</td>
+<td><a href="DatasetStructure_Attributes.html">Attributes</a></td><td>It is a bridge tables that allow associating many Object Types with many attributes. Users also can share the same native attribute across different object types like Capital Cost attribute that is shared for all the WEAP Objects</td><td>DatasetStructure</td>
 </tr>
 <tr>
 <td><a href="DataValues_BooleanValues.html">BooleanValues</a></td><td>This table stores binary data values of either zero or one to direct users to only populate binary values to represent water management operations that has duel values.</td><td>DataValues</td>
@@ -48,10 +48,10 @@
 <td><a href="CVs_CV_MethodType.html">CV_MethodType</a></td><td>A Method type is a controlled vocabulary term that can be like sample, simulation, optimization, or field procedure. The method type corresponds to &ldquo;value type&rdquo; attribute in the Observations Data Model </td><td>CVs</td>
 </tr>
 <tr>
-<td><a href="CVs_CV_ObjectTopology.html">CV_ObjectTopology</a></td><td>Node, Link, Network</td><td>CVs</td>
+<td><a href="CVs_CV_ObjectTopology.html">CV_ObjectTopology</a></td><td>binary, parameters, SeasonalParameter, TextFree, ControlledText, FileBased, TimeSeries, Column, Dummay, Network, MultiColumnArray</td><td>CVs</td>
 </tr>
 <tr class="altRow">
-<td><a href="CVs_CV_ObjectType.html">CV_ObjectType</a></td><td>Controlled vocabulary for Object types like Reservoir which maps out to native object types like dam, reservoir, and waterbody</td><td>CVs</td>
+<td><a href="CVs_CV_ObjectTypes.html">CV_ObjectTypes</a></td><td>Controlled vocabulary for Object types like Reservoir which maps out to native object types like dam, reservoir, and waterbody</td><td>CVs</td>
 </tr>
 <tr>
 <td><a href="CVs_CV_SeasonName.html">CV_SeasonName</a></td><td>Controlled vocabulary for seasons (e.g., winter and day, night, holiday, weekend, week days)</td><td>CVs</td>
@@ -75,13 +75,13 @@
 <td><a href="DataValues_DataValuesMapper.html">DataValuesMapper</a></td><td>The DataStorage table allows users to relate the same data value to many instances for the same attribute. For example, an evaporation time series can be related to many reservoir or demand site instances. The table also allows users to define many data values for the same attribute. For example, reservoir purpose has irrigation and hydropower text data values. </td><td>DataValues</td>
 </tr>
 <tr class="altRow">
-<td><a href="01_DatasetStructure_Datasets.html">Datasets</a></td><td>A Data Structure is a particular configuration and arrangement of Object Types and their Attributes in a dataset (e.g., model) for a specific domain (e.g., water supply, wastewater collection, storm water).</td><td>01_DatasetStructure</td>
+<td><a href="DatasetStructure_Datasets.html">Datasets</a></td><td>A Data Structure is a particular configuration and arrangement of Object Types and their Attributes in a dataset (e.g., model) for a specific domain (e.g., water supply, wastewater collection, storm water).</td><td>DatasetStructure</td>
 </tr>
 <tr>
 <td><a href="DataValues_Files.html">Files</a></td><td>This table stores references for data files which cannot be supported directly in WaM-DaM like maps, images, and documents</td><td>DataValues</td>
 </tr>
 <tr class="altRow">
-<td><a href="Networks_InstanceCategory.html">InstanceCategory</a></td><td>Orgnaizes native attributes into  hierarchal categories in their original data source  like hydropower category which groups all attributes that belong to hydropower </td><td>Networks</td>
+<td><a href="Networks_InstanceCategory.html">InstanceCategory</a></td><td> </td><td>Networks</td>
 </tr>
 <tr>
 <td><a href="Networks_Instances.html">Instances</a></td><td>An instance is a particular realization or implementation of an Object Type for a Data Structure in a specific location. The Instance concept helps modelers to replicate a distinct Object Type to represent specific water system components in their models with particular data values. </td><td>Networks</td>
@@ -93,7 +93,7 @@
 <td><a href="Networks_MasterNetworks.html">MasterNetworks</a></td><td>A Master Network is a specific implementation of a Data Structure, its Instances, and data values within a spatial location (e.g., Bear River Watershed, Utah). Master Networks help researchers to organize and then search groups of Instances that belong to a Data Structure in space. For example, a Data Structure for a WEAP model can be used to create separate WEAP model for the Bear River and the Weber River watersheds in Utah.</td><td>Networks</td>
 </tr>
 <tr class="altRow">
-<td><a href="01_Metadata_Methods.html">Methods</a></td><td>A Method refers to how a quantitative or qualitative data values of an attribute where created or generated and by whom. A Method helps users understand the procedure that was used to create data and realize its limitations. </td><td>01_Metadata</td>
+<td><a href="Metadata_Methods.html">Methods</a></td><td>A Method refers to how a quantitative or qualitative data values of an attribute where created or generated and by whom. A Method helps users understand the procedure that was used to create data and realize its limitations. </td><td>Metadata</td>
 </tr>
 <tr>
 <td><a href="DataValues_MultiColumnArrays.html">MultiColumnArrays</a></td><td>This table stores references to attributes that comprise attributes that are paired together </td><td>DataValues</td>
@@ -102,19 +102,19 @@
 <td><a href="DataValues_MultiColumnValues.html">MultiColumnValues</a></td><td>This table stores the data values for each column in the array along with a value order as an incremental integer (1, 2, 3&hellip;) that corresponds to the original order of data values in the paired array.</td><td>DataValues</td>
 </tr>
 <tr>
-<td><a href="01_DatasetStructure_ObjectCategory.html">ObjectCategory</a></td><td>Organizes objects into hierarchal categories in their original data source  like supply and demand categories that group objects </td><td>01_DatasetStructure</td>
+<td><a href="DatasetStructure_ObjectCategory.html">ObjectCategory</a></td><td>Organizes objects into hierarchal categories in their original data source  like supply and demand categories that group objects </td><td>DatasetStructure</td>
 </tr>
 <tr class="altRow">
-<td><a href="01_DatasetStructure_ObjectTypes.html">ObjectTypes</a></td><td>An Object Type is the building element of a data structure that modelers customize its attributes to represent a distinct water system component (e.g., reservoir or a river) in their models (data structures). An Object Type may represent physical and existing water components or to represent conceptual objects like representing water gains and losses in a river though a virtual node object at a point on a river. </td><td>01_DatasetStructure</td>
+<td><a href="DatasetStructure_ObjectTypes.html">ObjectTypes</a></td><td>An Object Type is the building element of a data structure that modelers customize its attributes to represent a distinct water system component (e.g., reservoir or a river) in their models (data structures). An Object Type may represent physical and existing water components or to represent conceptual objects like representing water gains and losses in a river though a virtual node object at a point on a river. </td><td>DatasetStructure</td>
 </tr>
 <tr>
-<td><a href="01_Metadata_Organizations.html">Organizations</a></td><td>. An organization refers to the institution that affiliates a person who generates data using a method or provides it as a source</td><td>01_Metadata</td>
+<td><a href="Metadata_Organizations.html">Organizations</a></td><td>. An organization refers to the institution that affiliates a person who generates data using a method or provides it as a source</td><td>Metadata</td>
 </tr>
 <tr class="altRow">
 <td><a href="DataValues_Parameters.html">Parameters</a></td><td>This table stores data values of single numeric parameters like an elevation of 45.5 that could have a unit of meter</td><td>DataValues</td>
 </tr>
 <tr>
-<td><a href="01_Metadata_People.html">People</a></td><td>A person record must be defined first to relate a source with an organization even if the person is unknown because sources connect to organizations through a person.</td><td>01_Metadata</td>
+<td><a href="Metadata_People.html">People</a></td><td>A person record must be defined first to relate a source with an organization even if the person is unknown because sources connect to organizations through a person.</td><td>Metadata</td>
 </tr>
 <tr class="altRow">
 <td><a href="Networks_ScenarioMapping.html">ScenarioMapping</a></td><td>The ScenarioMapping is a bridge table that allows associating many MetadataMapping records with many scenarios. This table allows to map out the duplicate topology, metadata, and data between scenarios </td><td>Networks</td>
@@ -126,7 +126,7 @@
 <td><a href="DataValues_SeasonalParameters.html">SeasonalParameters</a></td><td>This table stores multiple numeric data values of parameters that correspond to pattern changes in time but not necessarily the four seasons (e.g., winter, summer, day, and night). </td><td>DataValues</td>
 </tr>
 <tr>
-<td><a href="01_Metadata_Sources.html">Sources</a></td><td>A data Source refers to the data provider and where quantitative or qualitative data values of an attribute came from and who provided them. </td><td>01_Metadata</td>
+<td><a href="Metadata_Sources.html">Sources</a></td><td>A data Source refers to the data provider and where quantitative or qualitative data values of an attribute came from and who provided them. </td><td>Metadata</td>
 </tr>
 <tr class="altRow">
 <td><a href="DataValues_TextControlled.html">TextControlled</a></td><td>This table is similar to Text Free table but this one enforces controlled vocabulary on text data values to help users consistently define static descriptive text data values across instances. For example, a user can choose the owner type of a reservoir from a user predefined list like Federal, State, Local, and Private.</td><td>DataValues</td>
