@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb7_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMFeb16_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -24,7 +24,7 @@
 <td><a href="../tables/DataValues_BooleanValues.html">BooleanValues</a></td><td>This table stores binary data values of either zero or one to direct users to only populate binary values to represent water management operations that has duel values.</td>
 </tr>
 <tr class="altRow">
-<td><a href="../tables/DataValues_DataValuesMapper.html">DataValuesMapper</a></td><td>The DataStorage table allows users to relate the same data value to many instances for the same attribute. For example, an evaporation time series can be related to many reservoir or demand site instances. The table also allows users to define many data values for the same attribute. For example, reservoir purpose has irrigation and hydropower text data values. </td>
+<td><a href="../tables/DataValues_DataValuesMapper.html">DataValuesMapper</a></td><td>The DataValuesMapper is a bridge table that allows users to relate the same data value to many instances for the same attribute. For example, an evaporation time series can be related to many reservoir or demand site instances.  It also allows the same attribute to have many data values. For example, reservoir purpose has irrigation and hydropower text data values.</td>
 </tr>
 <tr>
 <td><a href="../tables/DataValues_Files.html">Files</a></td><td>This table stores references for data files which cannot be supported directly in WaM-DaM like maps, images, and documents</td>
@@ -48,7 +48,7 @@
 <td><a href="../tables/DataValues_TextFree.html">TextFree</a></td><td>This table stores descriptive text data values and helps users to flexibly add metadata that describe their water system operation. For example, a dam release rule could be described in text as the dam operator narrates their experience on how they release water from a dam. Another example is a &ldquo;dam owner name&rdquo; as Cache County or PacifiCorp.</td>
 </tr>
 <tr class="altRow">
-<td><a href="../tables/DataValues_TimeSeries.html">TimeSeries</a></td><td>This table stores metadata that are fixed for all the data values of a time series. </td>
+<td><a href="../tables/DataValues_TimeSeries.html">TimeSeries</a></td><td>This table stores metadata that are fixed for all the block of data values of a time series. </td>
 </tr>
 <tr>
 <td><a href="../tables/DataValues_TimeSeriesValues.html">TimeSeriesValues</a></td><td>This table stores the time series data values and their time stamp</td>

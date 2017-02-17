@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMFeb7_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMFeb16_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -14,7 +14,7 @@
 <hr>
 <h1>Table: TimeSeries</h1>
 <div class="paragraph">
-<p>This table stores metadata that are fixed for all the data values of a time series. </p>
+<p>This table stores metadata that are fixed for all the block of data values of a time series. </p>
 </div>
 <h2>Columns</h2>
 <table class="flat">
@@ -28,14 +28,14 @@
 </td><td class="PkCol"><a href="../columns/DataValues_TimeSeries_TimeSeriesID.html">TimeSeriesID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td class="PkCol"> </td><td class="PkCol"> Primary key identifier</td><td class="PkCol"> </td>
+</td><td class="PkCol"> </td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/DataValues_TimeSeries_WaterOrCalendarYear.html">WaterOrCalendarYear</a></td><td>VarChar(50)</td><td> </td><td> </td><td> </td><td>The term U.S.Geological Survey "water year" in reports that deal with surface-water supply is defined as the 12-month period October 1, for any given year through September 30, of the following year. The water year is designated by the calendar year in which it ends and which includes 9 of the 12 months. Thus, the year ending September 30, 1999 is called the "1999" water year.
 </td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_AggregationStatistiCV.html">AggregationStatistiCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Primary Key identifer</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_AggregationStatistiCV.html">AggregationStatistiCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term to an aggregation statistic (e.g., average, min, max)</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -44,7 +44,7 @@
 <td> </td><td><a href="../columns/DataValues_TimeSeries_AggregationInterval.html">AggregationInterval</a></td><td>Double</td><td> </td><td> </td><td> </td><td>The interval referes to time support which is the time interval when statistical aggregation applies to a set of measurement and then the aggregated value is reported (e.g., hourly measurement values are averaged over a day to report daily values)</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_IntervalTimeUnitCV.html">IntervalTimeUnitCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreigh key identifier for a unit</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_IntervalTimeUnitCV.html">IntervalTimeUnitCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term to a unit name</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -53,13 +53,13 @@
 <td> </td><td><a href="../columns/DataValues_TimeSeries_BeginDateTime.html">BeginDateTime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>A derived date referes to the begining of time series data (e.g., 1960). It helps to identify the time extent of a block of time sereis data</td><td> </td>
+</td><td> </td><td> </td><td>A derived date (queried) referes to the begining of time series data (e.g., 1960). It helps to identify the time extent of a block of time sereis data</td><td> </td>
 </tr>
 <tr>
 <td> </td><td><a href="../columns/DataValues_TimeSeries_EndDateTime.html">EndDateTime</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>A derived date referes to the end of time series data (e.g., 2000). It helps to identify the time extent of a block of time sereis data</td><td> </td>
+</td><td> </td><td> </td><td>A derived date (queried) referes to the end of time series data (e.g., 2000). It helps to identify the time extent of a block of time sereis data</td><td> </td>
 </tr>
 <tr class="altRow">
 <td> </td><td><a href="../columns/DataValues_TimeSeries_IsRegular.html">IsRegular</a></td><td>Boolean</td><td>
@@ -80,7 +80,7 @@
 </td><td> </td><td> </td><td>a text description of the block of time series data</td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_DataValuesMapperID.html">DataValuesMapperID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a Data Storage record</td><td class="FkCol">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/DataValues_TimeSeries_DataValuesMapperID.html">DataValuesMapperID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a DataValueMapper record</td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
@@ -114,7 +114,10 @@
 <td class="header">Diagram Name</td>
 </tr>
 <tr>
-<td><a href="../diagrams/01_WaMDaM.html">01_WaMDaM</a></td>
+<td><a href="../diagrams/01_WaMDaM_NoCVs.html">01_WaMDaM_NoCVs</a></td>
+</tr>
+<tr>
+<td><a href="../diagrams/02_WaMDaM_WCVs.html">02_WaMDaM_WCVs</a></td>
 </tr>
 </table>
 </body>
