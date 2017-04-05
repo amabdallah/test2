@@ -6,3 +6,6 @@ See the excel sheet (Query_As_is_desired_Results) where I show As-is results and
 
 Here is the db schema 
 http://amabdallah.github.io/test2/diagrams/01_WaMDaM_NoCVs.html
+
+
+https://gist.github.com/waylan/6555316
