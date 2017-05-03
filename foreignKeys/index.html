@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMMar16_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMMay2_201.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -18,7 +18,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CV_TextControlledValue_fk_CV_TextControlledValue_CV_AttributeName.html">fk_CV_TextControlledValue_CV_AttributeName</a></td><td><a href="../tables/CVs_CV_AttributeName.html">CVs.CV_AttributeName</a></td><td><a href="../tables/CVs_CV_TextControlledValue.html">CVs.CV_TextControlledValue</a></td><td>Name</td><td>AttributeName</td>
+<td><a href="../foreignKeys/CVs_CV_SeasonName_fk_CV_SeasonName_SeasonalNumericValues.html">fk_CV_SeasonName_SeasonalNumericValues</a></td><td><a href="../tables/DataValues_SeasonalNumericValues.html">DataValues.SeasonalNumericValues</a></td><td><a href="../tables/CVs_CV_SeasonName.html">CVs.CV_SeasonName</a></td><td>SeasonNameCV</td><td>Name</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/DatasetStructure_Attributes_fk_Attributes_CV_AttributeName.html">fk_Attributes_CV_AttributeName</a></td><td><a href="../tables/CVs_CV_AttributeName.html">CVs.CV_AttributeName</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>Name</td><td>AttributeNameCV</td>
@@ -39,10 +39,10 @@
 <td><a href="../foreignKeys/DatasetStructure_Datasets_fk_DatasetStructures_Sources.html">fk_DatasetStructures_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/DatasetStructure_Datasets.html">DatasetStructure.Datasets</a></td><td>SourceID</td><td>SourceID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTopology.html">fk_ObjectTypes_CV_ObjectTopology</a></td><td><a href="../tables/CVs_CV_ObjectTopology.html">CVs.CV_ObjectTopology</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTopologyCV</td>
+<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTopology.html">fk_ObjectTypes_CV_ObjectTopology</a></td><td><a href="../tables/CVs_CV_ObjectTypology.html">CVs.CV_ObjectTypology</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTypologyCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTypes.html">fk_ObjectTypes_CV_ObjectTypes</a></td><td><a href="../tables/CVs_CV_ObjectTypes.html">CVs.CV_ObjectTypes</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTypeCV</td>
+<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTypes.html">fk_ObjectTypes_CV_ObjectTypes</a></td><td><a href="../tables/CVs_CV_ObjectType.html">CVs.CV_ObjectType</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTypeCV</td>
 </tr>
 <tr class="altRow">
 <td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/DatasetStructure_Datasets.html">DatasetStructure.Datasets</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>DatasetID</td><td>DatasetID</td>
@@ -51,43 +51,49 @@
 <td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_ObjectCategory.html">fk_ObjectTypes_ObjectCategory</a></td><td><a href="../tables/DatasetStructure_ObjectCategory.html">DatasetStructure.ObjectCategory</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>ObjectCategoryID</td><td>ObjectCategoryID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_BooleanValues_fk_Binarys_DataValuesMapper.html">fk_Binarys_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_BooleanValues.html">DataValues.BooleanValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnArrays.html">fk_Bridge_MultiColumnArrays</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>MultiAttributeSeriesID</td><td>MultiColumnID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_BooleanValues_fk_BooleanValues_CV_BooleanValueMeaning.html">fk_BooleanValues_CV_BooleanValueMeaning</a></td><td><a href="../tables/CVs_CV_BooleanValueMeaning.html">CVs.CV_BooleanValueMeaning</a></td><td><a href="../tables/DataValues_BooleanValues.html">DataValues.BooleanValues</a></td><td>Name</td><td>BooleanValueMeaningCV</td>
+<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnArrays2.html">fk_Bridge_MultiColumnArrays2</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_Files_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_Files.html">DataValues.Files</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnValues.html">fk_Bridge_MultiColumnValues</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>MultiAttributeSeriesValueID</td><td>MultiColumnValueID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_Files_fk_Files_CV_FileFormat.html">fk_Files_CV_FileFormat</a></td><td><a href="../tables/CVs_CV_FileFormat.html">CVs.CV_FileFormat</a></td><td><a href="../tables/DataValues_Files.html">DataValues.Files</a></td><td>Name</td><td>FileFormatCV</td>
+<td><a href="../foreignKeys/DataValues_DescriptorValues_fk_TextControlled_CV_TextControlledValue.html">fk_TextControlled_CV_TextControlledValue</a></td><td><a href="../tables/CVs_CV_DescriptorValue.html">CVs.CV_DescriptorValue</a></td><td><a href="../tables/DataValues_DescriptorValues.html">DataValues.DescriptorValues</a></td><td>Name</td><td>DescriptorValueCV</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_MultiColumnArrays_fk_MultiColumnArray_DataValuesMapper.html">fk_MultiColumnArray_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiColumnArrays.html">DataValues.MultiColumnArrays</a></td><td>DataValuesMapperID</td><td>ColumnNameID</td>
+<td><a href="../foreignKeys/DataValues_DescriptorValues_fk_TextControlled_DataValuesMapper.html">fk_TextControlled_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_DescriptorValues.html">DataValues.DescriptorValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_MultiColumnArrays_fk_MultiColumnArrays_DataValuesMapper.html">fk_MultiColumnArrays_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiColumnArrays.html">DataValues.MultiColumnArrays</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_DualValues_fk_Binarys_DataValuesMapper.html">fk_Binarys_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_DualValues.html">DataValues.DualValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_MultiColumnValues_fk_MultiColumnValues_MultiColumnArrays.html">fk_MultiColumnValues_MultiColumnArrays</a></td><td><a href="../tables/DataValues_MultiColumnArrays.html">DataValues.MultiColumnArrays</a></td><td><a href="../tables/DataValues_MultiColumnValues.html">DataValues.MultiColumnValues</a></td><td>MultiColumnID</td><td>MultiColumnID</td>
+<td><a href="../foreignKeys/DataValues_DualValues_fk_BooleanValues_CV_BooleanValueMeaning.html">fk_BooleanValues_CV_BooleanValueMeaning</a></td><td><a href="../tables/CVs_CV_DualValueMeaning.html">CVs.CV_DualValueMeaning</a></td><td><a href="../tables/DataValues_DualValues.html">DataValues.DualValues</a></td><td>Name</td><td>DualValueMeaningCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_Parameters_fk_Parameters_DataValuesMapper.html">fk_Parameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_Parameters.html">DataValues.Parameters</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_ElectronicFiles_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_ElectronicFiles.html">DataValues.ElectronicFiles</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_CV_SeasonName.html">fk_SeasonalParameters_CV_SeasonName</a></td><td><a href="../tables/CVs_CV_SeasonName.html">CVs.CV_SeasonName</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>Name</td><td>SeasonNameCV</td>
+<td><a href="../foreignKeys/DataValues_ElectronicFiles_fk_Files_CV_FileFormat.html">fk_Files_CV_FileFormat</a></td><td><a href="../tables/CVs_CV_ElectronicFileFormat.html">CVs.CV_ElectronicFileFormat</a></td><td><a href="../tables/DataValues_ElectronicFiles.html">DataValues.ElectronicFiles</a></td><td>Name</td><td>ElectronicFileFormatCV</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_SeasonalParameters_fk_SeasonalParameters_DataValuesMapper.html">fk_SeasonalParameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_SeasonalParameters.html">DataValues.SeasonalParameters</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_MultiAttributeSeries_fk_MultiColumnArray_DataValuesMapper.html">fk_MultiColumnArray_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td>DataValuesMapperID</td><td>AttributeNameID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TextControlled_fk_TextControlled_CV_TextControlledValue.html">fk_TextControlled_CV_TextControlledValue</a></td><td><a href="../tables/CVs_CV_TextControlledValue.html">CVs.CV_TextControlledValue</a></td><td><a href="../tables/DataValues_TextControlled.html">DataValues.TextControlled</a></td><td>Name</td><td>TextControlledValueCV</td>
+<td><a href="../foreignKeys/DataValues_MultiAttributeSeries_fk_MultiColumnArrays_DataValuesMapper.html">fk_MultiColumnArrays_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TextControlled_fk_TextControlled_DataValuesMapper.html">fk_TextControlled_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextControlled.html">DataValues.TextControlled</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_MultiAttributeSeriesValues_fk_MultiColumnValues_MultiColumnArrays1.html">fk_MultiColumnValues_MultiColumnArrays1</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TextFree_fk_TextFree_DataValuesMapper.html">fk_TextFree_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TextFree.html">DataValues.TextFree</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_MultiAttributeSeriesValues_fk_MultiColumnValues_MultiColumnArrays2.html">fk_MultiColumnValues_MultiColumnArrays2</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td>MultiAttributeSeriesID</td><td>MultiAttributeSeriesID</td>
+</tr>
+<tr>
+<td><a href="../foreignKeys/DataValues_NumericValues_fk_Parameters_DataValuesMapper.html">fk_Parameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_NumericValues.html">DataValues.NumericValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+</tr>
+<tr class="altRow">
+<td><a href="../foreignKeys/DataValues_SeasonalNumericValues_fk_Parameters_DataValuesMapper.html">fk_Parameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_SeasonalNumericValues.html">DataValues.SeasonalNumericValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
 </tr>
 <tr>
 <td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_CV_AggregationStatistic.html">fk_TimeSeries_CV_AggregationStatistic</a></td><td><a href="../tables/CVs_CV_AggregationStatistic.html">CVs.CV_AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>Name</td><td>AggregationStatistiCV</td>

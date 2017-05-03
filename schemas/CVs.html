@@ -6,7 +6,7 @@
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMMar16_2017.xml]</p>
+<p>WaM-DaM1.0 [WaMDaMMay2_201.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -30,39 +30,47 @@
 <td><a href="../tables/CVs_CV_AttributeName.html">CV_AttributeName</a></td><td>Controlled vocabulary for attributes like Volume which maps out to native attributes like capacity, vol, and storage</td>
 </tr>
 <tr class="altRow">
-<td><a href="../tables/CVs_CV_BooleanValueMeaning.html">CV_BooleanValueMeaning</a></td><td>This table provides the controlled meaning of boolean data values</td>
+<td><a href="../tables/CVs_CV_DescriptorValue.html">CV_DescriptorValue</a></td><td>Controlled text values that can be shared across attributes of instances like Land use &ldquo;Grass_Pasture&rdquo; or irrigation type  "Flood&rdquo;, states "Utah"</td>
+</tr>
+<tr>
+<td><a href="../tables/CVs_CV_DualValueMeaning.html">CV_DualValueMeaning</a></td><td>This table provides the controlled meaning of dual data values</td>
+</tr>
+<tr class="altRow">
+<td><a href="../tables/CVs_CV_ElectronicFileFormat.html">CV_ElectronicFileFormat</a></td><td>Electronic file format like csv, jpg, NETCDF</td>
 </tr>
 <tr>
 <td><a href="../tables/CVs_CV_ElevationDatum.html">CV_ElevationDatum</a></td><td>A elvation datum (e.g., above sea mean level) to reference all the instances that belong to the same Master Network</td>
 </tr>
 <tr class="altRow">
-<td><a href="../tables/CVs_CV_FileFormat.html">CV_FileFormat</a></td><td>File format like csv, jpg, NETCDF</td>
-</tr>
-<tr>
 <td><a href="../tables/CVs_CV_InstanceName.html">CV_InstanceName</a></td><td>Univeral instance name to link synonymous instance terms for the samee instance (e.g., Hyrum = Hrm &amp; HyrumCity)</td>
 </tr>
-<tr class="altRow">
+<tr>
 <td><a href="../tables/CVs_CV_MethodType.html">CV_MethodType</a></td><td>A Method type is a controlled vocabulary term that can be like sample, simulation, optimization, or field procedure. The method type corresponds to &ldquo;value type&rdquo; attribute in the Observations Data Model </td>
 </tr>
+<tr class="altRow">
+<td><a href="../tables/CVs_CV_ObjectType.html">CV_ObjectType</a></td><td>Controlled vocabulary for Object types like Reservoir which maps out to native object types like dam, reservoir, and waterbody</td>
+</tr>
 <tr>
-<td><a href="../tables/CVs_CV_ObjectTopology.html">CV_ObjectTopology</a></td><td>The typology of the Object Type as either: Node, link, network</td>
+<td><a href="../tables/CVs_CV_ObjectTypology.html">CV_ObjectTypology</a></td><td>The typology of the Object Type as either: Node, link, network</td>
 </tr>
 <tr class="altRow">
-<td><a href="../tables/CVs_CV_ObjectTypes.html">CV_ObjectTypes</a></td><td>Controlled vocabulary for Object types like Reservoir which maps out to native object types like dam, reservoir, and waterbody</td>
-</tr>
-<tr>
 <td><a href="../tables/CVs_CV_SeasonName.html">CV_SeasonName</a></td><td>Controlled vocabulary for seasons (e.g., winter and day, night, holiday, weekend, week days)</td>
 </tr>
-<tr class="altRow">
-<td><a href="../tables/CVs_CV_SpatialReference.html">CV_SpatialReference</a></td><td>A spatial reference (e.g., NAD 1983) to reference all the instances that belong to the same Master Network</td>
-</tr>
 <tr>
-<td><a href="../tables/CVs_CV_TextControlledValue.html">CV_TextControlledValue</a></td><td>Controlled text values that can be shared across attributes of instances like Land use &ldquo;Grass_Pasture&rdquo; or irrigation type  "Flood&rdquo;, states "Utah"</td>
+<td><a href="../tables/CVs_CV_SpatialReference.html">CV_SpatialReference</a></td><td>A spatial reference (e.g., NAD 1983) to reference all the instances that belong to the same Master Network</td>
 </tr>
 <tr class="altRow">
 <td><a href="../tables/CVs_CV_Units.html">CV_Units</a></td><td>A unit refers to the dimension of data values of a quantitative attribute, help users unambiguously interpret the meaning of data values. Qualitative attributes like a &ldquo;dam owner name&rdquo; have no unit. The Units table applies to the Attributes table in WaM-DaM Core and enforces the same unit for all attributes across the instances of an Object to meet the consistency of units in particular Data Structure as used in modeling. </td>
 </tr>
 </table>
+<h2>Procedures</h2>
+<div class="paragraph">
+<p>(none)</p>
+</div>
+<h2>Views</h2>
+<div class="paragraph">
+<p>(none)</p>
+</div>
 <h2>Sequences</h2>
 <div class="paragraph">
 <p>(none)</p>
