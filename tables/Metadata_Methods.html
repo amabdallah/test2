@@ -1,67 +1,106 @@
 <HTML>
 <header>
-<title>Methods - Table</title>
+<title>METHODS - Table</title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMMay29_2017.xml]</p>
+<p>WaDE [WaDE_June1_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
 </div>
 <hr>
-<h1>Table: Methods</h1>
+<h1>Table: METHODS</h1>
 <div class="paragraph">
-<p>A Method refers to how a quantitative or qualitative data values of an attribute where created or generated and by whom. A Method helps users understand the procedure that was used to create data and realize its limitations. </p>
+<p></p>
 </div>
 <h2>Columns</h2>
 <table class="flat">
-<tr>
+<tr class="altRow">
 <td class="header">PK</td><td class="header">Name</td><td class="header">Data Type</td><td class="header">NULL</td><td class="header">Auto</td><td class="header">Default</td><td class="header">Comment</td><td class="header">FK</td>
 </tr>
 <tr>
 <td class="PkCol">
 <p class="boolImg">
 <img src="../images/pkb16.gif"></p>
-</td><td class="PkCol"><a href="../columns/Metadata_Methods_MethodID.html">MethodID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol">
-<p class="boolImg">
-<img src="../images/ok12d.gif"></p>
-</td><td class="PkCol"> </td><td class="PkCol">Primary key identifier</td><td class="PkCol"> </td>
+</td><td class="PkCol"><a href="../columns/Metadata_METHODS_METHOD_ID.html">METHOD_ID</a></td><td class="PkCol">Integer</td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td><td class="PkCol"> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Methods_MethodName.html">MethodName</a></td><td>VarChar(255)</td><td> </td><td> </td><td> </td><td>Full text name of the method	</td><td> </td>
-</tr>
-<tr>
-<td> </td><td><a href="../columns/Metadata_Methods_MethodWebpage.html">MethodWebpage</a></td><td>VarChar(255)</td><td>
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_CONTEXT.html">METHOD_CONTEXT</a></td><td>VarChar(20)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>A URL to a full description of the method	</td><td> </td>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_NAME.html">METHOD_NAME</a></td><td>VarChar(20)</td><td> </td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 <tr class="altRow">
-<td> </td><td><a href="../columns/Metadata_Methods_MethodCitation.html">MethodCitation</a></td><td>VarChar(500)</td><td>
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_DESC.html">METHOD_DESC</a></td><td>Text</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>a text of the proper citation of the method</td><td> </td>
+</td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 <tr>
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_MethodTypeCV.html">MethodTypeCV</a></td><td class="FkCol">VarChar(255)</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">CV term of the method type used to report or generate a data value</td><td class="FkCol">
+<td> </td><td><a href="../columns/Metadata_METHODS_STATE.html">STATE</a></td><td>VarChar(10)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_DATE.html">METHOD_DATE</a></td><td>DateTime</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_TYPE.html">METHOD_TYPE</a></td><td>VarChar(10)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_METHODS_TIME_SCALE.html">TIME_SCALE</a></td><td>Integer</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr>
+<td> </td><td><a href="../columns/Metadata_METHODS_METHOD_LINK.html">METHOD_LINK</a></td><td>VarChar(50)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr class="altRow">
+<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_METHODS_SOURCE_ID.html">SOURCE_ID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
 </td>
 </tr>
-<tr class="altRow">
-<td class="FkCol"> </td><td class="FkCol"><a href="../columns/Metadata_Methods_PersonID.html">PersonID</a></td><td class="FkCol">Integer</td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol"> </td><td class="FkCol">Foreign key identifier for a person</td><td class="FkCol">
+<tr>
+<td> </td><td><a href="../columns/Metadata_METHODS_RESOURCE_TYPE.html">RESOURCE_TYPE</a></td><td>VarChar(20)</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_METHODS_LOCATION_NAME.html">LOCATION_NAME</a></td><td>VarChar(50)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 <tr>
-<td> </td><td><a href="../columns/Metadata_Methods_Description.html">Description</a></td><td>Text</td><td>
+<td> </td><td><a href="../columns/Metadata_METHODS_LAST_CHANGE_DATE.html">LAST_CHANGE_DATE</a></td><td>DateTime</td><td>
 <p class="boolImg">
 <img src="../images/ok12d.gif"></p>
-</td><td> </td><td> </td><td>Full text description of the method	</td><td> </td>
+</td><td> </td><td> </td><td> </td><td> </td>
+</tr>
+<tr class="altRow">
+<td> </td><td><a href="../columns/Metadata_METHODS_RETIRED_FLAG.html">RETIRED_FLAG</a></td><td>VarChar(20)</td><td>
+<p class="boolImg">
+<img src="../images/ok12d.gif"></p>
+</td><td> </td><td> </td><td> </td><td> </td>
 </tr>
 </table>
 <br>
@@ -76,10 +115,7 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_CV_MethodType.html">fk_Methods_CV_MethodType</a></td><td><a href="../tables/CVs_CV_MethodType.html">CVs.CV_MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Name</td><td>MethodTypeCV</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_People.html">fk_Methods_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>PersonID</td><td>PersonID</td>
+<td><a href="../foreignKeys/Metadata_METHODS_fk_METHODS_DATA_SOURCES.html">fk_METHODS_DATA_SOURCES</a></td><td><a href="../tables/Metadata_DATA_SOURCES.html">Metadata.DATA_SOURCES</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td>SOURCE_ID</td><td>SOURCE_ID</td>
 </tr>
 </table>
 <br>
@@ -94,10 +130,7 @@
 <td class="header">Diagram Name</td>
 </tr>
 <tr>
-<td><a href="../diagrams/01_WaMDaM_NoCVs.html">01_WaMDaM_NoCVs</a></td>
-</tr>
-<tr>
-<td><a href="../diagrams/02_WaMDaM_WCVs.html">02_WaMDaM_WCVs</a></td>
+<td><a href="../diagrams/WaDE_Schema.html">WaDE_Schema</a></td>
 </tr>
 </table>
 </body>

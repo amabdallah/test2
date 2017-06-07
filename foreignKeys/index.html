@@ -1,12 +1,12 @@
 <HTML>
 <header>
-<title>WaM-DaM1.0 Foreign Keys</title>
+<title>WaDE Foreign Keys</title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 </header>
 <body>
 <div class="logo">
-<p>WaM-DaM1.0 [WaMDaMMay29_2017.xml]</p>
+<p>WaDE [WaDE_June1_2017.xml]</p>
 </div>
 <div class="horzMenu">
 <a class="horzMenu" href="../index.html"> Home</a><a class="horzMenu" href="../tables/index.html">Tables</a><a class="horzMenu" href="../schemas/index.html">Schemas</a><a class="horzMenu" href="../diagrams/index.html">Diagrams</a><a class="horzMenu" href="../foreignKeys/index.html">Foreign Keys</a><a class="horzMenu" href="../indexes/index.html">Indexes</a>
@@ -18,154 +18,118 @@
 <td class="header">Name</td><td class="header">Parent Table</td><td class="header">Child Table</td><td class="header">Parent Columns</td><td class="header">Child Columns</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/CVs_CV_SeasonName_fk_CV_SeasonName_SeasonalNumericValues.html">fk_CV_SeasonName_SeasonalNumericValues</a></td><td><a href="../tables/DataValues_SeasonalNumericValues.html">DataValues.SeasonalNumericValues</a></td><td><a href="../tables/CVs_CV_SeasonName.html">CVs.CV_SeasonName</a></td><td>SeasonNameCV</td><td>Name</td>
+<td><a href="../foreignKeys/DataValues_D_ALLOCATION_ACTUAL_fk_D_ALLOCATION_ACTUAL_D_ALLOCATION_FLOW.html">fk_D_ALLOCATION_ACTUAL_D_ALLOCATION_FLOW</a></td><td><a href="../tables/DataValues_D_ALLOCATION_FLOW.html">DataValues.D_ALLOCATION_FLOW</a></td><td><a href="../tables/DataValues_D_ALLOCATION_ACTUAL.html">DataValues.D_ALLOCATION_ACTUAL</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DETAIL_SEQ_NO</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DETAIL_SEQ_NO</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_Attributes_fk_Attributes_CV_AttributeName.html">fk_Attributes_CV_AttributeName</a></td><td><a href="../tables/CVs_CV_AttributeName.html">CVs.CV_AttributeName</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>Name</td><td>AttributeNameCV</td>
+<td><a href="../foreignKeys/DataValues_D_ALLOCATION_FLOW_fk_D_ALLOCATION_FLOW_DETAIL_ALLOCATION.html">fk_D_ALLOCATION_FLOW_DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_D_ALLOCATION_FLOW.html">DataValues.D_ALLOCATION_FLOW</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_Attributes_fk_Attributes_CV_AttributeType.html">fk_Attributes_CV_AttributeType</a></td><td><a href="../tables/CVs_CV_AttributeDataType.html">CVs.CV_AttributeDataType</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>Name</td><td>AttributeDataTypeCV</td>
+<td><a href="../foreignKeys/DataValues_D_ALLOCATION_LOCATION_fk_D_ALLOCATION_LOCATION_DETAIL_ALLOCATION.html">fk_D_ALLOCATION_LOCATION_DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_D_ALLOCATION_LOCATION.html">DataValues.D_ALLOCATION_LOCATION</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_Attributes_fk_Attributes_CV_Units.html">fk_Attributes_CV_Units</a></td><td><a href="../tables/CVs_CV_Units.html">CVs.CV_Units</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>Name</td><td>UnitNameCV</td>
+<td><a href="../foreignKeys/DataValues_D_ALLOCATION_USE_fk_D_ALLOCATION_USE_D_ALLOCATION_FLOW.html">fk_D_ALLOCATION_USE_D_ALLOCATION_FLOW</a></td><td><a href="../tables/DataValues_D_ALLOCATION_FLOW.html">DataValues.D_ALLOCATION_FLOW</a></td><td><a href="../tables/DataValues_D_ALLOCATION_USE.html">DataValues.D_ALLOCATION_USE</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DETAIL_SEQ_NO</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DETAIL_SEQ_NO</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_Attributes_fk_ObjectAttributes_AttributeCategory.html">fk_ObjectAttributes_AttributeCategory</a></td><td><a href="../tables/DatasetStructure_AttributeCategory.html">DatasetStructure.AttributeCategory</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>AttributeCategoryID</td><td>AttributeCategoryID</td>
+<td><a href="../foreignKeys/DataValues_D_COMMUNITY_WATER_SUPPLY_fk_D_COMMUNITY_WATER_SUPPLY_D_CONSUMPTIVE_USE.html">fk_D_COMMUNITY_WATER_SUPPLY_D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_CONSUMPTIVE_USE.html">DataValues.D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_COMMUNITY_WATER_SUPPLY.html">DataValues.D_COMMUNITY_WATER_SUPPLY</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_Attributes_fk_ObjectAttributes_ObjectTypes.html">fk_ObjectAttributes_ObjectTypes</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td>ObjectTypeID</td><td>ObjectTypeID</td>
+<td><a href="../foreignKeys/DataValues_D_CONSUMPTIVE_USE_fk_D_CONSUMPTIVE_USE_DETAIL_USE.html">fk_D_CONSUMPTIVE_USE_DETAIL_USE</a></td><td><a href="../tables/DataValues_DETAIL_USE.html">DataValues.DETAIL_USE</a></td><td><a href="../tables/DataValues_D_CONSUMPTIVE_USE.html">DataValues.D_CONSUMPTIVE_USE</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_Datasets_fk_DatasetStructures_Sources.html">fk_DatasetStructures_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/DatasetStructure_Datasets.html">DatasetStructure.Datasets</a></td><td>SourceID</td><td>SourceID</td>
+<td><a href="../foreignKeys/DataValues_D_DIVERSION_ACTUAL_fk_D_DIVERSION_ACTUAL_D_DIVERSION_FLOW.html">fk_D_DIVERSION_ACTUAL_D_DIVERSION_FLOW</a></td><td><a href="../tables/DataValues_D_DIVERSION_FLOW.html">DataValues.D_DIVERSION_FLOW</a></td><td><a href="../tables/DataValues_D_DIVERSION_ACTUAL.html">DataValues.D_DIVERSION_ACTUAL</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID, DETAIL_SEQ_NO</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID, DETAIL_SEQ_NO</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTopology.html">fk_ObjectTypes_CV_ObjectTopology</a></td><td><a href="../tables/CVs_CV_ObjectTypology.html">CVs.CV_ObjectTypology</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTypologyCV</td>
+<td><a href="../foreignKeys/DataValues_D_DIVERSION_FLOW_fk_D_DIVERSION_FLOW_DETAIL_DIVERSION.html">fk_D_DIVERSION_FLOW_DETAIL_DIVERSION</a></td><td><a href="../tables/DataValues_DETAIL_DIVERSION.html">DataValues.DETAIL_DIVERSION</a></td><td><a href="../tables/DataValues_D_DIVERSION_FLOW.html">DataValues.D_DIVERSION_FLOW</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_CV_ObjectTypes.html">fk_ObjectTypes_CV_ObjectTypes</a></td><td><a href="../tables/CVs_CV_ObjectType.html">CVs.CV_ObjectType</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>Name</td><td>ObjectTypeCV</td>
+<td><a href="../foreignKeys/DataValues_D_DIVERSION_USE_fk_D_DIVERSION_USE_D_DIVERSION_FLOW.html">fk_D_DIVERSION_USE_D_DIVERSION_FLOW</a></td><td><a href="../tables/DataValues_D_DIVERSION_FLOW.html">DataValues.D_DIVERSION_FLOW</a></td><td><a href="../tables/DataValues_D_DIVERSION_USE.html">DataValues.D_DIVERSION_USE</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID, DETAIL_SEQ_NO</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, DIVERSION_ID, DETAIL_SEQ_NO</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_DataStructures.html">fk_ObjectTypes_DataStructures</a></td><td><a href="../tables/DatasetStructure_Datasets.html">DatasetStructure.Datasets</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>DatasetID</td><td>DatasetID</td>
+<td><a href="../foreignKeys/DataValues_D_IRRIGATION_fk_D_IRRIGATION_D_CONSUMPTIVE_USE.html">fk_D_IRRIGATION_D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_CONSUMPTIVE_USE.html">DataValues.D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_IRRIGATION.html">DataValues.D_IRRIGATION</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DatasetStructure_ObjectTypes_fk_ObjectTypes_ObjectCategory.html">fk_ObjectTypes_ObjectCategory</a></td><td><a href="../tables/DatasetStructure_ObjectCategory.html">DatasetStructure.ObjectCategory</a></td><td><a href="../tables/DatasetStructure_ObjectTypes.html">DatasetStructure.ObjectTypes</a></td><td>ObjectCategoryID</td><td>ObjectCategoryID</td>
+<td><a href="../foreignKeys/DataValues_D_RETURN_FLOW_ACTUAL_fk_D_RETURN_FLOW_ACTUAL_DETAIL_RETURN_FLOW.html">fk_D_RETURN_FLOW_ACTUAL_DETAIL_RETURN_FLOW</a></td><td><a href="../tables/DataValues_DETAIL_RETURN_FLOW.html">DataValues.DETAIL_RETURN_FLOW</a></td><td><a href="../tables/DataValues_D_RETURN_FLOW_ACTUAL.html">DataValues.D_RETURN_FLOW_ACTUAL</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, RETURN_FLOW_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, RETURN_FLOW_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnArrays.html">fk_Bridge_MultiColumnArrays</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>MultiAttributeSeriesID</td><td>MultiColumnID</td>
+<td><a href="../foreignKeys/DataValues_D_THERMOELECTRIC_fk_D_THERMOELECTRIC_D_CONSUMPTIVE_USE.html">fk_D_THERMOELECTRIC_D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_CONSUMPTIVE_USE.html">DataValues.D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_THERMOELECTRIC.html">DataValues.D_THERMOELECTRIC</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnArrays2.html">fk_Bridge_MultiColumnArrays2</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_D_USE_AMOUNT_fk_D_USE_AMOUNT_D_CONSUMPTIVE_USE.html">fk_D_USE_AMOUNT_D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_CONSUMPTIVE_USE.html">DataValues.D_CONSUMPTIVE_USE</a></td><td><a href="../tables/DataValues_D_USE_AMOUNT.html">DataValues.D_USE_AMOUNT</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID, BENEFICIAL_USE_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_Bridge_fk_Bridge_MultiColumnValues.html">fk_Bridge_MultiColumnValues</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td><a href="../tables/DataValues_Bridge.html">DataValues.Bridge</a></td><td>MultiAttributeSeriesValueID</td><td>MultiColumnValueID</td>
+<td><a href="../foreignKeys/DataValues_D_USE_LOCATION_fk_D_USE_LOCATION_DETAIL_USE.html">fk_D_USE_LOCATION_DETAIL_USE</a></td><td><a href="../tables/DataValues_DETAIL_USE.html">DataValues.DETAIL_USE</a></td><td><a href="../tables/DataValues_D_USE_LOCATION.html">DataValues.D_USE_LOCATION</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID, WATER_USER_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_DescriptorValues_fk_TextControlled_CV_TextControlledValue.html">fk_TextControlled_CV_TextControlledValue</a></td><td><a href="../tables/CVs_CV_DescriptorValue.html">CVs.CV_DescriptorValue</a></td><td><a href="../tables/DataValues_DescriptorValues.html">DataValues.DescriptorValues</a></td><td>Name</td><td>DescriptorValueCV</td>
+<td><a href="../foreignKeys/DataValues_DETAIL_ALLOCATION_fk_DETAIL_ALLOCATION_REPORT.html">fk_DETAIL_ALLOCATION_REPORT</a></td><td><a href="../tables/Metadata_REPORT.html">Metadata.REPORT</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td>ORGANIZATION_ID, REPORT_ID</td><td>ORGANIZATION_ID, REPORT_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_DescriptorValues_fk_TextControlled_DataValuesMapper.html">fk_TextControlled_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_DescriptorValues.html">DataValues.DescriptorValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_DETAIL_DIVERSION_fk_DETAIL_DIVERSION_DETAIL_ALLOCATION.html">fk_DETAIL_DIVERSION_DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_DIVERSION.html">DataValues.DETAIL_DIVERSION</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_DualValues_fk_Binarys_DataValuesMapper.html">fk_Binarys_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_DualValues.html">DataValues.DualValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_DETAIL_RETURN_FLOW_fk_DETAIL_RETURN_FLOW_DETAIL_ALLOCATION.html">fk_DETAIL_RETURN_FLOW_DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_RETURN_FLOW.html">DataValues.DETAIL_RETURN_FLOW</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_DualValues_fk_BooleanValues_CV_BooleanValueMeaning.html">fk_BooleanValues_CV_BooleanValueMeaning</a></td><td><a href="../tables/CVs_CV_DualValueMeaning.html">CVs.CV_DualValueMeaning</a></td><td><a href="../tables/DataValues_DualValues.html">DataValues.DualValues</a></td><td>Name</td><td>DualValueMeaningCV</td>
+<td><a href="../foreignKeys/DataValues_DETAIL_USE_fk_DETAIL_USE_DETAIL_ALLOCATION.html">fk_DETAIL_USE_DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_ALLOCATION.html">DataValues.DETAIL_ALLOCATION</a></td><td><a href="../tables/DataValues_DETAIL_USE.html">DataValues.DETAIL_USE</a></td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td><td>ORGANIZATION_ID, REPORT_ID, ALLOCATION_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_ElectronicFiles_fk_FileBased_DataValuesMapper.html">fk_FileBased_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_ElectronicFiles.html">DataValues.ElectronicFiles</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_REPORTING_UNIT_fk_REPORTING_UNIT_REPORT.html">fk_REPORTING_UNIT_REPORT</a></td><td><a href="../tables/Metadata_REPORT.html">Metadata.REPORT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td>ORGANIZATION_ID, REPORT_ID</td><td>ORGANIZATION_ID, REPORT_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_ElectronicFiles_fk_Files_CV_FileFormat.html">fk_Files_CV_FileFormat</a></td><td><a href="../tables/CVs_CV_ElectronicFileFormat.html">CVs.CV_ElectronicFileFormat</a></td><td><a href="../tables/DataValues_ElectronicFiles.html">DataValues.ElectronicFiles</a></td><td>Name</td><td>ElectronicFileFormatCV</td>
+<td><a href="../foreignKeys/DataValues_S_ALLOCATION_IRRIGATION_fk_S_ALLOCATION_IRRIGATION_SUMMARY_ALLOCATION.html">fk_S_ALLOCATION_IRRIGATION_SUMMARY_ALLOCATION</a></td><td><a href="../tables/DataValues_SUMMARY_ALLOCATION.html">DataValues.SUMMARY_ALLOCATION</a></td><td><a href="../tables/DataValues_S_ALLOCATION_IRRIGATION.html">DataValues.S_ALLOCATION_IRRIGATION</a></td><td>ORGANIZATION_ID, REPORT_UNIT_ID, REPORT_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_UNIT_ID, REPORT_ID, SUMMARY_SEQ</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_MultiAttributeSeries_fk_MultiColumnArray_DataValuesMapper.html">fk_MultiColumnArray_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td>DataValuesMapperID</td><td>AttributeNameID</td>
+<td><a href="../foreignKeys/DataValues_S_AVAILABILITY_AMOUNT_fk_S_AVAILABILITY_AMOUNT_METHODS.html">fk_S_AVAILABILITY_AMOUNT_METHODS</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td><a href="../tables/DataValues_S_AVAILABILITY_AMOUNT.html">DataValues.S_AVAILABILITY_AMOUNT</a></td><td>METHOD_ID</td><td>METHOD_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_MultiAttributeSeries_fk_MultiColumnArrays_DataValuesMapper.html">fk_MultiColumnArrays_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_S_AVAILABILITY_AMOUNT_fk_S_SUMMARY_AMOUNT_SUMMARY_AVAILABILITY.html">fk_S_SUMMARY_AMOUNT_SUMMARY_AVAILABILITY</a></td><td><a href="../tables/DataValues_SUMMARY_AVAILABILITY.html">DataValues.SUMMARY_AVAILABILITY</a></td><td><a href="../tables/DataValues_S_AVAILABILITY_AMOUNT.html">DataValues.S_AVAILABILITY_AMOUNT</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_MultiAttributeSeriesValues_fk_MultiColumnValues_MultiColumnArrays1.html">fk_MultiColumnValues_MultiColumnArrays1</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_S_AVAILABILITY_METRIC_fk_S_AVAILABILITY_METRIC_METHODS.html">fk_S_AVAILABILITY_METRIC_METHODS</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td><a href="../tables/DataValues_S_AVAILABILITY_METRIC.html">DataValues.S_AVAILABILITY_METRIC</a></td><td>METHOD_ID</td><td>METHOD_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_MultiAttributeSeriesValues_fk_MultiColumnValues_MultiColumnArrays2.html">fk_MultiColumnValues_MultiColumnArrays2</a></td><td><a href="../tables/DataValues_MultiAttributeSeries.html">DataValues.MultiAttributeSeries</a></td><td><a href="../tables/DataValues_MultiAttributeSeriesValues.html">DataValues.MultiAttributeSeriesValues</a></td><td>MultiAttributeSeriesID</td><td>MultiAttributeSeriesID</td>
+<td><a href="../foreignKeys/DataValues_S_AVAILABILITY_METRIC_fk_S_AVAILABILITY_METRIC_METRICS.html">fk_S_AVAILABILITY_METRIC_METRICS</a></td><td><a href="../tables/Metadata_METRICS.html">Metadata.METRICS</a></td><td><a href="../tables/DataValues_S_AVAILABILITY_METRIC.html">DataValues.S_AVAILABILITY_METRIC</a></td><td>METRIC_ID</td><td>METRIC_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_NumericValues_fk_Parameters_DataValuesMapper.html">fk_Parameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_NumericValues.html">DataValues.NumericValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_S_AVAILABILITY_METRIC_fk_S_AVAILABILITY_METRIC_SUMMARY_AVAILABILITY.html">fk_S_AVAILABILITY_METRIC_SUMMARY_AVAILABILITY</a></td><td><a href="../tables/DataValues_SUMMARY_AVAILABILITY.html">DataValues.SUMMARY_AVAILABILITY</a></td><td><a href="../tables/DataValues_S_AVAILABILITY_METRIC.html">DataValues.S_AVAILABILITY_METRIC</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_SeasonalNumericValues_fk_Parameters_DataValuesMapper.html">fk_Parameters_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_SeasonalNumericValues.html">DataValues.SeasonalNumericValues</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_S_USE_AMOUNT_fk_S_USE_AMOUNT_METHODS.html">fk_S_USE_AMOUNT_METHODS</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td><a href="../tables/DataValues_S_USE_AMOUNT.html">DataValues.S_USE_AMOUNT</a></td><td>METHOD_ID</td><td>METHOD_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_CV_AggregationStatistic.html">fk_TimeSeries_CV_AggregationStatistic</a></td><td><a href="../tables/CVs_CV_AggregationStatistic.html">CVs.CV_AggregationStatistic</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>Name</td><td>AggregationStatistiCV</td>
+<td><a href="../foreignKeys/DataValues_S_USE_AMOUNT_fk_S_USE_AMOUNT_SUMMARY_USE.html">fk_S_USE_AMOUNT_SUMMARY_USE</a></td><td><a href="../tables/DataValues_SUMMARY_USE.html">DataValues.SUMMARY_USE</a></td><td><a href="../tables/DataValues_S_USE_AMOUNT.html">DataValues.S_USE_AMOUNT</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, BENEFICIAL_USE_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, BENEFICIAL_USE_ID, SUMMARY_SEQ</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_CV_Units.html">fk_TimeSeries_CV_Units</a></td><td><a href="../tables/CVs_CV_Units.html">CVs.CV_Units</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>Name</td><td>IntervalTimeUnitCV</td>
+<td><a href="../foreignKeys/DataValues_S_USE_IRRIGATION_fk_S_USE_IRRIGATION_SUMMARY_USE.html">fk_S_USE_IRRIGATION_SUMMARY_USE</a></td><td><a href="../tables/DataValues_SUMMARY_USE.html">DataValues.SUMMARY_USE</a></td><td><a href="../tables/DataValues_S_USE_IRRIGATION.html">DataValues.S_USE_IRRIGATION</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/DataValues_TimeSeries_fk_TimeSeries_DataValuesMapper.html">fk_TimeSeries_DataValuesMapper</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
+<td><a href="../foreignKeys/DataValues_S_WATER_SUPPLY_AMOUNT_fk_S_WATER_SUPPLY_AMOUNT_METHODS.html">fk_S_WATER_SUPPLY_AMOUNT_METHODS</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td><a href="../tables/DataValues_S_WATER_SUPPLY_AMOUNT.html">DataValues.S_WATER_SUPPLY_AMOUNT</a></td><td>METHOD_ID</td><td>METHOD_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/DataValues_TimeSeriesValues_fk_TimeSeriesValues_TimeSeries.html">fk_TimeSeriesValues_TimeSeries</a></td><td><a href="../tables/DataValues_TimeSeries.html">DataValues.TimeSeries</a></td><td><a href="../tables/DataValues_TimeSeriesValues.html">DataValues.TimeSeriesValues</a></td><td>TimeSeriesID</td><td>TimeSeriesID</td>
+<td><a href="../foreignKeys/DataValues_S_WATER_SUPPLY_AMOUNT_fk_S_WATER_SUPPLY_AMOUNT_SUMMARY_WATER_SUPPLY.html">fk_S_WATER_SUPPLY_AMOUNT_SUMMARY_WATER_SUPPLY</a></td><td><a href="../tables/DataValues_SUMMARY_WATER_SUPPLY.html">DataValues.SUMMARY_WATER_SUPPLY</a></td><td><a href="../tables/DataValues_S_WATER_SUPPLY_AMOUNT.html">DataValues.S_WATER_SUPPLY_AMOUNT</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID, SUMMARY_SEQ</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_CV_MethodType.html">fk_Methods_CV_MethodType</a></td><td><a href="../tables/CVs_CV_MethodType.html">CVs.CV_MethodType</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>Name</td><td>MethodTypeCV</td>
+<td><a href="../foreignKeys/DataValues_SUMMARY_ALLOCATION_fk_SUMMARY_ALLOCATION_REPORTING_UNIT.html">fk_SUMMARY_ALLOCATION_REPORTING_UNIT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td><a href="../tables/DataValues_SUMMARY_ALLOCATION.html">DataValues.SUMMARY_ALLOCATION</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Metadata_Methods_fk_Methods_People.html">fk_Methods_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td>PersonID</td><td>PersonID</td>
+<td><a href="../foreignKeys/DataValues_SUMMARY_AVAILABILITY_fk_SUMMARY_AVAILABILITY_REPORTING_UNIT.html">fk_SUMMARY_AVAILABILITY_REPORTING_UNIT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td><a href="../tables/DataValues_SUMMARY_AVAILABILITY.html">DataValues.SUMMARY_AVAILABILITY</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Metadata_People_fk_People_Organizations.html">fk_People_Organizations</a></td><td><a href="../tables/Metadata_Organizations.html">Metadata.Organizations</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td>OrganizationID</td><td>OrganizationID</td>
+<td><a href="../foreignKeys/DataValues_SUMMARY_REGULATORY_fk_SUMMARY_REGULATORY_REPORTING_UNIT.html">fk_SUMMARY_REGULATORY_REPORTING_UNIT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td><a href="../tables/DataValues_SUMMARY_REGULATORY.html">DataValues.SUMMARY_REGULATORY</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Metadata_Sources_fk_Sources_People.html">fk_Sources_People</a></td><td><a href="../tables/Metadata_People.html">Metadata.People</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td>PersonID</td><td>PersonID</td>
+<td><a href="../foreignKeys/DataValues_SUMMARY_USE_fk_SUMMARY_USE_REPORTING_UNIT.html">fk_SUMMARY_USE_REPORTING_UNIT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td><a href="../tables/DataValues_SUMMARY_USE.html">DataValues.SUMMARY_USE</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Networks_Connections_fk_Connections_Instances_EndNode.html">fk_Connections_Instances_EndNode</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td><a href="../tables/Networks_Connections.html">Networks.Connections</a></td><td>InstanceID</td><td>EndNodeInstanceID</td>
+<td><a href="../foreignKeys/DataValues_SUMMARY_WATER_SUPPLY_fk_SUMMARY_WATER_SUPPLY_REPORTING_UNIT.html">fk_SUMMARY_WATER_SUPPLY_REPORTING_UNIT</a></td><td><a href="../tables/DataValues_REPORTING_UNIT.html">DataValues.REPORTING_UNIT</a></td><td><a href="../tables/DataValues_SUMMARY_WATER_SUPPLY.html">DataValues.SUMMARY_WATER_SUPPLY</a></td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td><td>ORGANIZATION_ID, REPORT_ID, REPORT_UNIT_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Networks_Connections_fk_Connections_Instances_Link.html">fk_Connections_Instances_Link</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td><a href="../tables/Networks_Connections.html">Networks.Connections</a></td><td>InstanceID</td><td>LinkInstanceID</td>
+<td><a href="../foreignKeys/Metadata_GEOSPATIAL_REF_fk_GEOSPATIAL_REF_REPORT.html">fk_GEOSPATIAL_REF_REPORT</a></td><td><a href="../tables/Metadata_REPORT.html">Metadata.REPORT</a></td><td><a href="../tables/Metadata_GEOSPATIAL_REF.html">Metadata.GEOSPATIAL_REF</a></td><td>ORGANIZATION_ID, REPORT_ID</td><td>ORGANIZATION_ID, REPORT_ID</td>
 </tr>
 <tr>
-<td><a href="../foreignKeys/Networks_Connections_fk_Connections_Instances_startNode.html">fk_Connections_Instances_startNode</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td><a href="../tables/Networks_Connections.html">Networks.Connections</a></td><td>InstanceID</td><td>StartNodeInstanceID</td>
+<td><a href="../foreignKeys/Metadata_METHODS_fk_METHODS_DATA_SOURCES.html">fk_METHODS_DATA_SOURCES</a></td><td><a href="../tables/Metadata_DATA_SOURCES.html">Metadata.DATA_SOURCES</a></td><td><a href="../tables/Metadata_METHODS.html">Metadata.METHODS</a></td><td>SOURCE_ID</td><td>SOURCE_ID</td>
 </tr>
 <tr class="altRow">
-<td><a href="../foreignKeys/Networks_Instances_fk_Instances_CV_InstanceName.html">fk_Instances_CV_InstanceName</a></td><td><a href="../tables/CVs_CV_InstanceName.html">CVs.CV_InstanceName</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>Name</td><td>InstanceNameCV</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_Instances_fk_Instances_InstanceCategory.html">fk_Instances_InstanceCategory</a></td><td><a href="../tables/Networks_InstanceCategory.html">Networks.InstanceCategory</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td>InstanceCategoryID</td><td>InstanceCategoryID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_DataStorage.html">fk_Mapping_DataStorage</a></td><td><a href="../tables/DataValues_DataValuesMapper.html">DataValues.DataValuesMapper</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>DataValuesMapperID</td><td>DataValuesMapperID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_Instances.html">fk_Mapping_Instances</a></td><td><a href="../tables/Networks_Instances.html">Networks.Instances</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>InstanceID</td><td>InstanceID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_Methods.html">fk_Mapping_Methods</a></td><td><a href="../tables/Metadata_Methods.html">Metadata.Methods</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>MethodID</td><td>MethodID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_ObjectAttributes.html">fk_Mapping_ObjectAttributes</a></td><td><a href="../tables/DatasetStructure_Attributes.html">DatasetStructure.Attributes</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>AttributeID</td><td>AttributeID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_Mapping_fk_Mapping_Sources.html">fk_Mapping_Sources</a></td><td><a href="../tables/Metadata_Sources.html">Metadata.Sources</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td>SourceID</td><td>SourceID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_MasterNetworks_fk_MasterNetworks_CV_SpatialReference.html">fk_MasterNetworks_CV_SpatialReference</a></td><td><a href="../tables/CVs_CV_SpatialReference.html">CVs.CV_SpatialReference</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td>Name</td><td>SpatialReferenceNameCV</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_MasterNetworks_fk_MasterNetworks_CV_VerticalDatum.html">fk_MasterNetworks_CV_VerticalDatum</a></td><td><a href="../tables/CVs_CV_ElevationDatum.html">CVs.CV_ElevationDatum</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td>Name</td><td>VerticalDatumCV</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_ScenarioMapping_fk_ScenarioMapping_Mapping.html">fk_ScenarioMapping_Mapping</a></td><td><a href="../tables/Networks_Mapping.html">Networks.Mapping</a></td><td><a href="../tables/Networks_ScenarioMapping.html">Networks.ScenarioMapping</a></td><td>MappingID</td><td>MappingID</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_ScenarioMapping_fk_ScenarioMapping_Scenarios.html">fk_ScenarioMapping_Scenarios</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td><a href="../tables/Networks_ScenarioMapping.html">Networks.ScenarioMapping</a></td><td>ScenarioID</td><td>ScenarioID</td>
-</tr>
-<tr>
-<td><a href="../foreignKeys/Networks_Scenarios_fk_Scenarios_CV_Units.html">fk_Scenarios_CV_Units</a></td><td><a href="../tables/CVs_CV_Units.html">CVs.CV_Units</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td>Name</td><td>TimeStepUnitCV</td>
-</tr>
-<tr class="altRow">
-<td><a href="../foreignKeys/Networks_Scenarios_fk_Scenarios_MasterNetworks.html">fk_Scenarios_MasterNetworks</a></td><td><a href="../tables/Networks_MasterNetworks.html">Networks.MasterNetworks</a></td><td><a href="../tables/Networks_Scenarios.html">Networks.Scenarios</a></td><td>MasterNetworkID</td><td>MasterNetworkID</td>
+<td><a href="../foreignKeys/Metadata_REPORT_fk_REPORT_ORGANIZATION.html">fk_REPORT_ORGANIZATION</a></td><td><a href="../tables/Metadata_ORGANIZATION.html">Metadata.ORGANIZATION</a></td><td><a href="../tables/Metadata_REPORT.html">Metadata.REPORT</a></td><td>ORGANIZATION_ID</td><td>ORGANIZATION_ID</td>
 </tr>
 </table>
 </body>
