@@ -1,9 +1,10 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A geographical coordinate",
-    "type": "object",
-    "properties": {
-        "latitude": { "type": "41.73554" },
-        "longitude": { "type": "-112.235844" }
-    }
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-111.67172801960636, 42.64789893515511]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
 }
