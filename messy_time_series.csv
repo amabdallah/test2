@@ -1,4 +1,4 @@
-DatasetAcronym,AttributeName, InstanceName,AggregationStatisticCV,IntervalTimeUnitCV,UnitNameCV,WaterOrCalendarYear,YearMonth, CountDays,CalenderYear,CumulativeMonthly
+DatasetAcronym,AttributeName, InstanceName,AggregationStatisticCV,IntervalTimeUnitCV,UnitNameCV,WaterOrCalendarYear,YearMonth, TimeSeriesValueID , CountDays,CalenderYear,CumulativeMonthly
 "UDWRFlowData","Delivered volume per month","10046500.MONBEAR RIVER BL STEWART DAM NR MONTPELIER IDAHO","Cumulative","month","acre foot","WaterYear","10/1923","1","1","1923-10-01","13800"
 "UDWRFlowData","Delivered volume per month","10046500.MONBEAR RIVER BL STEWART DAM NR MONTPELIER IDAHO","Cumulative","month","acre foot","WaterYear","11/1923","2","1","1923-11-01","15600"
 "UDWRFlowData","Delivered volume per month","10046500.MONBEAR RIVER BL STEWART DAM NR MONTPELIER IDAHO","Cumulative","month","acre foot","WaterYear","12/1923","3","1","1923-12-01","14800"
